@@ -17,9 +17,9 @@
                 Aromatherapy
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Oils</a>
-                <a href="" class="dropdown-item">Oil Diffuser</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=essential_oils" class="dropdown-item">Oils</a>
+                <a href="{% url 'products' %}?category=diffuser" class="dropdown-item">Oil Diffuser</a>
+                <a href="{% url 'products' %}?category=essential_oils,diffuser" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -28,9 +28,7 @@
                 Candles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Candles</a>
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">All Candles</a>
             </div>
         </li>
 
@@ -39,10 +37,7 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">New Arrivals</a>
             </div>
         </li>
     </ul>
