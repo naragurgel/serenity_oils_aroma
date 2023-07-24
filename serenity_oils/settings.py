@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu101.gitpod.io',
                  '8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu102.gitpod.io']
 
-
+APPEND_SLASH = False
 # Application definition
 
 INSTALLED_APPS = [
