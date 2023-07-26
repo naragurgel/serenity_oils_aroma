@@ -1,1 +1,1 @@
-web: gunicorn serenity_oils.wsgi:application
+web: gunicorn serenity_oils_aroma.wsgi:application
