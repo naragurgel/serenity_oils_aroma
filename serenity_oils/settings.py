@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu101.gitpod.io',
                  '8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu102.gitpod.io',
-                 'https://serenity-oils-3beb26e98281.herokuapp.com/',
+                 'serenity-oils-3beb26e98281.herokuapp.com',
                  'localhost']
 
 APPEND_SLASH = False
