@@ -1,0 +1,221 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "essential_oils",
+      "friendly_name": "Oils"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "diffuser",
+      "friendly_name": "Diffuser"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "candles",
+      "friendly_name": "Candles"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "sku": "01",
+      "name": "Cinnamon Oil",
+      "description": "Cinnamon essential oil is often used to create a cozy and comforting atmosphere, promote relaxation, and uplift the mood. Its stimulating and invigorating qualities make it a popular choice for aromatherapy, while its potential antimicrobial properties have been valued for centuries.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "cinnamon_oil_rnyukB8.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "sku": null,
+      "name": "Eucalyptus Oil",
+      "description": "Eucalyptus essential oil is commonly used to promote clear breathing and support respiratory health, making it a popular choice during seasonal discomforts. Its rejuvenating scent is also known to enhance focus and mental clarity, making it a valuable companion during moments of concentration.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "eucalyptus_oil_hCF7KTz.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "sku": null,
+      "name": "Frankincense Oil",
+      "description": "Frankincense essential oil is often used in meditation and spiritual practices to enhance focus, center the mind, and create a sense of tranquility. Its calming and soothing properties make it a popular choice for promoting relaxation and reducing feelings of stress. Known for its potential skincare benefits, frankincense essential oil is also used to rejuvenate the skin and support a healthy complexion.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "frankincense_oil_6df0VXu.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "sku": null,
+      "name": "Lavander Oil",
+      "description": "With its calming and soothing aroma, lavender essential oil is renowned for its ability to promote relaxation and a sense of tranquility. Its gentle floral scent carries comforting notes that can help alleviate stress, anxiety, and promote restful sleep. Lavender essential oil is also cherished for its potential skincare benefits, as it may aid in soothing skin irritations and promoting a healthy complexion. Whether used in aromatherapy, added to bath products, or incorporated into beauty rituals, lavender essential oil is a timeless favorite known for its therapeutic properties and enchanting fragrance.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "lavander_oil_2Q6D25S.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "sku": null,
+      "name": "Lemongrass Oil",
+      "description": "Lemongrass essential oil is distinctively fresh and citrusy scent, lemongrass essential oil is cherished for its energizing and revitalizing properties. Its uplifting aroma is known to enhance mood, promote mental clarity, and provide a refreshing boost of energy. Lemongrass essential oil is often used in aromatherapy to create an atmosphere of positivity and rejuvenation. It is also valued for its potential antiseptic and insect-repellent qualities. Whether used in diffusers, massage oils, or skincare products, lemongrass essential oil is a delightful addition to your well-being routine.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "lemongrass__oil_lUxkPqY.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "sku": null,
+      "name": "Peppermint Oil",
+      "description": "Peppermint essential oil can help promote clarity and focus, making it a popular choice for enhancing mental alertness and concentration. Its cooling sensation can provide relief from muscle tension and discomfort, while its soothing qualities may help ease headaches and promote overall well-being. Peppermint essential oil is also known for its potential digestive support and refreshing breath benefits. Whether used in diffusers, massage oils, or personal care products, peppermint essential oil is a revitalizing addition to your self-care routine.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "peppermint_oil_v8YDKYJ.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "sku": null,
+      "name": "Tea Tree Oil",
+      "description": "Tea Tree essential oil is distinctive herbal and medicinal scent, tea tree essential oil is highly valued for its antibacterial, antifungal, and antimicrobial properties. Known for its potential to promote clear and healthy skin, tea tree essential oil is a popular choice for addressing blemishes, soothing skin irritations, and supporting overall skin health. Its purifying qualities also make it a valuable addition to natural cleaning products, helping to freshen and disinfect the environment. Tea tree essential oil is often used in aromatherapy to invigorate the senses, promote a sense of clarity, and provide a refreshing and uplifting experience.",
+      "weight": null,
+      "price": "4.00",
+      "rating": null,
+      "image_url": null,
+      "image": "tea_tree_oil_F1Jdqeh.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "sku": null,
+      "name": "White diffuser",
+      "description": "Air white diffuser aromatherapy",
+      "weight": null,
+      "price": "18.00",
+      "rating": null,
+      "image_url": null,
+      "image": "diffuser_lGKWByv.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "sku": null,
+      "name": "Black Diffuser",
+      "description": "Air diffuser aromatherapy - black",
+      "weight": null,
+      "price": "20.00",
+      "rating": null,
+      "image_url": null,
+      "image": "diffuser1_m7Y3RqW.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "category": 3,
+      "sku": null,
+      "name": "Cinammon Candel",
+      "description": "Cinnamon candles are often used for their aromatic qualities, which may help to uplift mood, reduce stress, and create a sense of comfort and warmth. The scent of cinnamon has been associated with feelings of relaxation, nostalgia, and even improved cognitive function.",
+      "weight": null,
+      "price": "10.00",
+      "rating": null,
+      "image_url": null,
+      "image": "cinnamon_candel_akGgIKd.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "sku": null,
+      "name": "Lavander Candle",
+      "description": "The gentle and soothing scent of lavender can help create a peaceful atmosphere, making lavender candles a wonderful addition to spaces dedicated to rest, meditation, or self-care. The aroma of lavender is known to have a calming effect on the mind and body, helping to alleviate feelings of anxiety and promote a sense of tranquility.",
+      "weight": null,
+      "price": "10.00",
+      "rating": null,
+      "image_url": null,
+      "image": "lavender_candle_qFQs9NR.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "category": 3,
+      "sku": null,
+      "name": "Orange Candle",
+      "description": "The scent of oranges can evoke feelings of happiness, positivity, and warmth, making orange candles ideal for boosting mood and creating a sense of vitality. The uplifting fragrance of oranges can help alleviate stress, reduce anxiety, and promote a sense of well-being and positivity. In addition to their aromatic benefits, orange candles can also be used to enhance focus and concentration. The scent of oranges has been associated with improved cognitive function and increased alertness, making orange candles a great choice for workspaces or study areas.",
+      "weight": null,
+      "price": "10.00",
+      "rating": null,
+      "image_url": null,
+      "image": "orange_candles_cJWqXXF.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "category": 3,
+      "sku": null,
+      "name": "Peppermint and Eucalyptus Candle",
+      "description": "The combination of peppermint and eucalyptus in a candle form allows you to enjoy the invigorating and refreshing qualities of both scents simultaneously. Lighting a peppermint and eucalyptus candle can create an atmosphere that promotes focus, mental clarity, and a sense of revitalization. These candles are ideal for creating a stimulating and productive environment, whether you're studying, working, or simply seeking an energizing ambiance. Indulge in the invigorating fragrance of peppermint and eucalyptus candles to awaken your senses, boost your mood, and enjoy a renewed sense of vitality.",
+      "weight": null,
+      "price": "12.00",
+      "rating": null,
+      "image_url": null,
+      "image": "peppermint-eucalyptus_candle_CLojdPF.jpg"
+    }
+  }
+]
