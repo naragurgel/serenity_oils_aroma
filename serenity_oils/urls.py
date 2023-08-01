@@ -32,3 +32,6 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'serenity_oils.views.handler404'
+handler403 = 'serenity_oils.views.handler403'
+handler500 = 'serenity_oils.views.handler500'
+handler400 = 'serenity_oils.views.handler400'
