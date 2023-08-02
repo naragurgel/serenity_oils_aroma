@@ -1,0 +1,137 @@
+body {
+    background: none;
+    background-color: white;
+}
+
+.text-black-blog {
+    color: #000 !important;
+    font-size: 40px;
+   
+}
+
+.fa-heart {
+    font-size: 16px;
+    color: #dc3545;
+}
+
+.btn-like {
+    border: none;
+}
+
+.image-container {
+    position: relative;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #030303;
+}
+
+.author {
+    color: rgb(245, 242, 242);
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.post-link {
+    text-decoration: none !important;
+    color: #020202;
+}
+
+.page-link {
+    color: #fff !important;
+    background-color: #000;;
+}
+
+.page-link:hover {
+    background-color: #222 !important;
+    border-color: #222 !important;
+}
+
+/* -------------------------------- Post Detail */
+
+.masthead {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.masthead-image {
+    margin-top: 12rem;
+}
+
+.img-fluid {
+    max-width: 55%;
+    height: auto;
+}
+
+.masthead-text {
+    background-color: #fff;
+    color: #050505;
+    padding: 10px;
+}
+
+.text-secondary-blog {
+    font-weight: 400;
+}
+
+.text-secondary-blog i {
+    margin-right: 7px ;
+}
+
+.btn-like {
+    color: #e84610;
+    border: none;
+    background: transparent !important;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #e84610;
+    background: transparent !important;
+    border: none;
+}
+
+a.signup-blog-link {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
+@media (max-width: 976px) and (min-width: 320px) {
+    .masthead {
+        margin-top: -71px;
+    }
+    
+}
+
+/* Breakpoint: 769px (Smaller Tablets & Smartphones) */
+@media (max-width: 769px) {
+    .masthead-image {
+        flex-direction: column;
+    }
+
+    .masthead-content {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
