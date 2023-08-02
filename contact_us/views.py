@@ -1,16 +1,18 @@
-from django.shortcuts import render
-from .models import ContactUs
+from django.shortcuts import render, redirect
+from .forms import ContactUsForm
 
 
 def contact_us(request):
     if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-        message = request.POST.get('message')
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('success_page.html')
+    else:
+        form = ContactUsForm()
 
-        ContactUs.objects.create(
-            name=name, email=email, subject=subject, message=message)
+    return render(request, 'contact_us/contact_us.html', {'form': form})
 
-    return render(request, 'contact_us/contact_us.html')
 
+def success_page(request):
+    return render(request, 'contact_us/success_page.html')
