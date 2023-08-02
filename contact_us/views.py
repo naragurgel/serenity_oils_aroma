@@ -7,7 +7,7 @@ def contact_us(request):
         form = ContactUsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success_page.html')
+            return render(request, 'contact_us/success_page.html')
     else:
         form = ContactUsForm()
 

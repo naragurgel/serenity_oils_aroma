@@ -1,9 +1,8 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'contact_us/css/contact_us.css' %}">
-    {% load crispy_forms_tags %}
-    {% crispy_crf %}
 {% endblock %}
 
 {% block page_header %}

@@ -23,7 +23,7 @@
             <div class="col-lg-6">
                 <form method="post">
                     {% csrf_token %}
-                {{ form|crispy }}
+                    {{ form|crispy }}
                      <div class="text-center">
                     <a class="btn btn-outline-black" href="{% url 'home' %}">Back to home</a>
                     <button class="btn btn-black border-black" type="submit">Submit</button>
