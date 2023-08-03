@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}| Testimonials{% endblock %}
+
+{% block content %}
+<div class="container main-container">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="logo-font">Testimonials</h2>
+            <hr class="w-50 mb-1">
+            {% if has_orders %}
+                <a class="btn btn-outline-black" href="{% url 'add_testimonial' %}">Add Testimonial</a>
+            {% endif %}
+        </div>
+        <div class="col-12 mt-3">
+            <div class="row my-flex-card">
+                {% for testimonial in testimonials %}
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-body rounded text-black pb-1">
+                                <a href="{% url 'testimonial_detail' testimonial.slug  %}" class="text-decoration-none">
+                                    <div class="h-50">
+                                    
+                                        <h2 class="card-title text-black">{{ testimonial.title|safe|truncatechars:20 }}</h2>
+                                        <div class="text-black text-decoration-none">
+                                            <p>{{ testimonial.content|safe|striptags|truncatechars:30}}</p>
+                                        </div>
+                                    </div>
+                                </a>  
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12 text-center small testimonials">
+                                        {% if testimonial in queryset_author %}
+                                        <a class="color-btn-edit-tes" href="{% url 'edit_testimonial' testimonial.slug %}">Edit</a> | 
+                                        {% endif %}
+                                        {% if testimonial in queryset_author or is_admin %}
+                                        <a class="color-btn-del-tes" href="{% url 'delete_testimonial' testimonial.slug %}">Delete</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <p class="text-muted small p-0 m-0">Created: {{ testimonial.created}}</p>
+                                <p class="text-muted small p-0">Author: {{ testimonial.author}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none">
+                            </div>
+                        {% endif %}                        
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-none d-md-block d-lg-none">
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block">
+                            </div>
+                        {% endif %}   
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="btt-button shadow-sm border border-black bg-white">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+</div>
+{%endblock%}
+
+<!-- Back to top button -->
+{% block postloadjs %}
+{{ block.super }}
+
+<script>
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
+{%endblock%}

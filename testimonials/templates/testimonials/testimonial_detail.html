@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block extra_title %}| Testimonial Detail{% endblock %}
+
+{% block content %} 
+<div class="container main-container">
+  <div class="row">
+    <div class="col text-center">
+      <h2 class="logo-font">Testimonial detail</h2>
+      <hr class="w-75 mb-3">
+    </div>
+  </div>
+  <div class="col-12 col-md-8 offset-md-2 mt-5 mt-md-0">
+    <div class="card">
+      <div class="card-body rounded">
+        <div class="h-50">
+          <h2 class="card-title text-black">{{ testimonial.title|safe}}</h2>
+          <div class="text-black">
+            <p>{{ testimonial.content|safe|striptags}}</p>
+          </div>
+        </div>
+        <hr class="w-75 mb-3">
+        <div class="row">
+          <div class="col-12 text-center small testimonials">
+            {% if testimonial in queryset_author %}
+            <a
+              class="color-btn-edit-tes"
+              href="{% url 'edit_testimonial' testimonial.slug %}"
+              >Edit</a
+            >
+            | {% endif %} {% if testimonial in queryset_author or is_admin %}
+            <a
+              class="color-btn-del-tes"
+              href="{% url 'delete_testimonial' testimonial.slug %}"
+              >Delete</a
+            >
+            {% endif %}
+          </div>
+        </div>
+        <p class="text-muted small p-0">Created: {{ testimonial.created}}</p>
+        <p class="text-muted small p-0">Updated: {{ testimonial.updated}}</p>
+        <p class="text-muted small p-0">Author: {{ testimonial.author}}</p>
+        <div class="text-center mt-1">
+          <a class="btn btn-black border-black" href="{% url 'testimonials' %}"
+            >Back to testimonials</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
