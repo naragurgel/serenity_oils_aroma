@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from pathlib import Path
+import os
 if os.path.exists('env.py'):
     import env
     # can override local to False here if you want to test things like 404, 500 error
@@ -27,6 +29,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu101.gitpod.io',
                  '8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu102.gitpod.io',
