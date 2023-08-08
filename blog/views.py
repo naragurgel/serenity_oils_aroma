@@ -1,29 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, render, redirect
 from django.contrib.auth import login
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post
 from .forms import CommentForm
-
-
-class FavouriteList(generic.ListView):
-
-    def favourite_list(request):
-        new = Post.newmanager.filter(favourites=request.user)
-        return render(request, 'favourites.html',
-        {'new': new})
-
-class Favourite(generic.ListView):
-    
-    def favorite_add(request, id):
-        post = get_object_or_404(Post, id=id)
-        if post.favourites.filter(id=request.user.id).exists():
-            post.favourites.remove(request.user)
-        else:
-            post.favourites.add(request.user)
-        return HttpResponseRedirect(request.META['HTTP_REFERER'])
-
 
 class PostList(generic.ListView):
     """
@@ -73,3 +54,34 @@ class PostLike(View):
             messages.success(request, 'Blog liked!')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+
+def favorite_list(request):
+    user = request.user
+    favorite_posts = user.favorite.all()  # Fetch the user's favorite posts
+
+    context = {'favorite_posts': favorite_posts}
+    return render(request, 'blog/favourite_list.html', context)
+
+
+def save_favorite(request, post_slug):
+    user = request.user
+    post = get_object_or_404(Post, slug=post_slug)
+
+    if user not in post.favorites.all():
+        post.favorites.add(user)  # Add the post to user's favorites
+        post.save()
+
+    return HttpResponseRedirect(reverse('favorite_list'))
+
+
+def remove_favorite(request, post_slug):
+    user = request.user
+    post = get_object_or_404(Post, slug=post_slug)
+
+    if user in post.favorites.all():
+        post.favorites.remove(user)  # Remove the post from user's favorites
+        post.save()
+
+    return render(request, 'blog/favourite_list.html')

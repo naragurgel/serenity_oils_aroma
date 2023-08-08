@@ -5,14 +5,21 @@
   <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
 {% endblock %}
 
-{% block extra_title %}| Testimonials{% endblock %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="text-black-blog mt-4">Testimonials</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
 <div class="container main-container">
     <div class="row">
         <div class="col text-center">
-            <h2 class="logo-font">Testimonials</h2>
-            <hr class="w-50 mb-1">
             {% if has_orders %}
                 <a class="btn btn-outline-black" href="{% url 'add_testimonial' %}">Add Testimonial</a>
             {% endif %}
@@ -36,10 +43,10 @@
                                 <div class="row">
                                     <div class="col-12 text-center small testimonials">
                                         {% if testimonial in queryset_author %}
-                                        <a class="color-btn-edit-tes" href="{% url 'edit_testimonial' testimonial.slug %}">Edit</a> | 
+                                        <a class="btn btn-outline-black rounded-0 mb-3" href="{% url 'edit_testimonial' testimonial.slug %}">Edit</a> | 
                                         {% endif %}
                                         {% if testimonial in queryset_author or is_admin %}
-                                        <a class="color-btn-del-tes" href="{% url 'delete_testimonial' testimonial.slug %}">Delete</a>
+                                        <a class="btn btn-outline-black rounded-0 mb-3" href="{% url 'delete_testimonial' testimonial.slug %}">Delete</a>
                                         {% endif %}
                                     </div>
                                 </div>
