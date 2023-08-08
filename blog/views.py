@@ -1,9 +1,28 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib.auth import login
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post
 from .forms import CommentForm
+
+
+class FavouriteList(generic.ListView):
+
+    def favourite_list(request):
+        new = Post.newmanager.filter(favourites=request.user)
+        return render(request, 'favourites.html',
+        {'new': new})
+
+class Favourite(generic.ListView):
+    
+    def favorite_add(request, id):
+        post = get_object_or_404(Post, id=id)
+        if post.favourites.filter(id=request.user.id).exists():
+            post.favourites.remove(request.user)
+        else:
+            post.favourites.add(request.user)
+        return HttpResponseRedirect(request.META['HTTP_REFERER'])
 
 
 class PostList(generic.ListView):

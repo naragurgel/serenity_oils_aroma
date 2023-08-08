@@ -16,10 +16,15 @@
         <div class="row g-0">
             <div class="col-12 masthead-image d-flex align-items-center justify-content-center">
                 <!-- DISPLAY FEATURED IMAGE OF BLOG POST -->
+                <div>
                 <img src="{{ post.featured_image.url }}" class="img-fluid" alt="{{ post.title }}">
-                <div class="ml-3 masthead-content">
+                </div>
+                <div class="col-md-7 d-flex justify-content-between masthead-content">
                     <!-- DISPLAY THE TITLE AND AUTHOR OF THE BLOG POST -->
                     <h1 class="post-title text-black text-center">{{ post.title }}</h1>
+                    <div>
+                    <a href="{% url 'favorite_add' post.id %}" class="btn btn-outline-primary">Add to Favourites</a>
+                    </div>
                     <p class="post-subtitle text-center">By: {{ post.author }} | {{ post.created_on }}</p>
                 </div>
                 
