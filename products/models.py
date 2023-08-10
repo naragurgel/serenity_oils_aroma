@@ -4,7 +4,9 @@ from django.db import models
 
 
 class Category(models.Model):
-
+    """
+    Model to represent product categories
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -19,6 +21,9 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Model to represent products
+    """
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)

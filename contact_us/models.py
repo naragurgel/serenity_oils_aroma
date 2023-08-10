@@ -2,6 +2,9 @@ from django.db import models
 
 
 class ContactUs(models.Model):
+    """
+    Model to store user contact submissions
+    """
     name = models.CharField(max_length=100)
     email = models.EmailField()
     subject = models.CharField(max_length=200)

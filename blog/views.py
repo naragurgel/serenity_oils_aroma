@@ -58,30 +58,39 @@ class PostLike(View):
 
 
 def favorite_list(request):
+    """
+    A view to display a list of user's favorite blog posts
+    """
     user = request.user
-    favorite_posts = user.favorite.all()  # Fetch the user's favorite posts
+    favorite_posts = user.favorite.all()  
 
     context = {'favorite_posts': favorite_posts}
     return render(request, 'blog/favourite_list.html', context)
 
 
 def save_favorite(request, post_slug):
+    """
+    A view to add a blog post to the user's favorites
+    """
     user = request.user
     post = get_object_or_404(Post, slug=post_slug)
 
     if user not in post.favorites.all():
-        post.favorites.add(user)  # Add the post to user's favorites
+        post.favorites.add(user)
         post.save()
 
     return HttpResponseRedirect(reverse('favorite_list'))
 
 
 def remove_favorite(request, post_slug):
+    """
+    A view to remove a blog post from the user's favorites
+    """
     user = request.user
     post = get_object_or_404(Post, slug=post_slug)
 
     if user in post.favorites.all():
-        post.favorites.remove(user)  # Remove the post from user's favorites
+        post.favorites.remove(user)
         post.save()
 
-    return render(request, 'blog/favourite_list.html')
+    return HttpResponseRedirect(reverse('favorite_list'))
