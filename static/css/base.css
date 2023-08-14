@@ -347,26 +347,26 @@ input[name='q']::placeholder {
     padding: 20px 20px 10px 20px;
 }
 
-.social-icons {
-    padding-right: 2rem;
-    text-decoration: none;
-    color: white;
-}
-
-.fa-brands {
-    font-size: 1.5rem;
-    color: aliceblue;
-}
-
-hr {
+.text {
     color: #fff;
 }
+
+a {
+    color: #d7d7d7;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
 /* -------------------------------- MailChimp */
 
 #mc_embed_signup {
     background:  #060606;
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
     width: 600px;
 }
 
