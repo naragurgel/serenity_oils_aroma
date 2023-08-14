@@ -34,7 +34,6 @@ ALLOWED_HOSTS = ['8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu101.gitpod.io',
                  'serenity-oils-3beb26e98281.herokuapp.com',
                  'localhost']
 
-APPEND_SLASH = False
 # Application definition
 
 INSTALLED_APPS = [
