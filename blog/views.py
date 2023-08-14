@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, render, redirect
 from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -55,7 +56,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-
+@login_required
 def favorite_list(request):
     """
     A view to display a list of user's favorite blog posts
@@ -67,6 +68,7 @@ def favorite_list(request):
     return render(request, 'blog/favourite_list.html', context)
 
 
+@login_required
 def save_favorite(request, post_slug):
     """
     A view to add a blog post to the user's favorites
@@ -81,6 +83,7 @@ def save_favorite(request, post_slug):
     return HttpResponseRedirect(reverse('favorite_list'))
 
 
+@login_required
 def remove_favorite(request, post_slug):
     """
     A view to remove a blog post from the user's favorites
