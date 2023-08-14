@@ -22,6 +22,9 @@ body {
 .logo-font {
     text-transform: uppercase;
 }
+.slogan {
+    color: #000;
+}
 
 .main-logo-link {
     width: fit-content;
