@@ -19,3 +19,8 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.main-bg {
+    background-color: #F9FAFC;
+    min-height: calc(100vh - 196px);
+}

@@ -3,6 +3,15 @@ body {
     background-color: white;
 }
 
+.main-bg {
+    background-color: #F9FAFC;
+    min-height: calc(100vh - 196px);
+}
+
+.contact {
+    margin-top: 3rem;
+}
+
 .text-black-blog {
     color: #000 !important;
     font-size: 40px;
@@ -141,3 +150,4 @@ form {
     }
     
 }
+

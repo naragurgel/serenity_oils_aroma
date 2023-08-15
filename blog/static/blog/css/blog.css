@@ -3,6 +3,11 @@ body {
     background-color: white;
 }
 
+.main-bg {
+    background-color: #F9FAFC;
+    min-height: calc(100vh - 196px);
+}
+
 .text-black-blog {
     color: #000 !important;
     font-size: 40px;
