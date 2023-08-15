@@ -29,7 +29,7 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 - <strong>Get Inspired:</strong> Share practical ideas, tips, and stories in the blog to encourage users to experience the benefits of aromatherapy.
 
 **Business Goals:**
-- <strong>Easy to use:</strong> Provide valuable insights into the benefits of aromatherapy, fostering relaxation, mindfulness, and harmony.
+- <strong>Easy to use:</strong> It's easy to fins and easy to navegate, provide valuable insights into the benefits of aromatherapy.
 - <strong>Make Customers Happy:</strong> Giving clear info on products and how they work helps customers feel good about their choices.
 - <strong>Become a Trusted Source:</strong> By teaming up with experts, we aim to be a reliable place for aromatherapy advice and solutions.
 - <strong>Keep Customers Coming Back:</strong> By focusing on making customers happy, we want them to keep choosing us for their relaxation needs.
