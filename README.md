@@ -1,39 +1,41 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Serenity Oils - Essential Oils Aroma
+Am I Responsive image HERE!
 
-Welcome,
+Serenity Oils is a online page that offers natural essential oils aromas, candles and diffusers. You can explore the benefits of aromatherapy with essential oils for relaxation, mindfulness, harmonious atmosphere and much more. 
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+You can view the deployed website [here](https://serenity-oils-3beb26e98281.herokuapp.com/).
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+## Github
+[Serenity Oils](https://github.com/naragurgel/serenity_oils_aroma)
+## Author
+Nara Gurgel
 
-## Codeanywhere Reminders
+## Contents
+CREATE TABLE
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## User Experience
 
-`python3 -m http.server`
+### Strategy
+#### Project Goals
+* Build an easy to use and information website inviting online platform dedicated to promoting well-being through aromatherapy.
+* Showcase a variety of natural essential oils, candles, and diffusers to create a serene ambiance.
+* Ensure user can build and edit profile and orders.
+* Create a user friendly payment mechanism.
+* Provide valuable insights into the benefits of aromatherapy, fostering relaxation, mindfulness, and harmony.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Structure
+#### User Stories
+- There are 26 user's stories were generated using an agile approach in a *"As a [role], I can [action], so that [benefit]"* format with acceptance criteria in declarative gherkin syntax.
+- They were recorded as GitHub issues and integrated into a project board within GitHub. [here](https://github.com/users/naragurgel/projects/7) 
+- This approach was employed throughout the development journey to construct the project through gradual increments.
+- The order of implementation was as follows:
+    - Home page and navigation.
+    - Registration, login and logout features.
+    - Products page with filter and sections.
+    - Blog, Add favourits post to the favourits page.
+    - Contact us and Testimonials.  
+    - My bag and checkout.
+    - Payment and confirmation of the order.
+    - My profile page.
+    - Footer with contact and social links.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
