@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemao: https://serenity-oils-3beb26e98281.herokuapp.com/sitemap.xml

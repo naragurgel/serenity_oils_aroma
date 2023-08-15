@@ -22,6 +22,7 @@ body {
 .logo-font {
     text-transform: uppercase;
 }
+
 .slogan {
     color: #000;
 }
@@ -348,6 +349,7 @@ input[name='q']::placeholder {
     background-color: #060606;
     width: 100%;
     padding: 20px 20px 10px 20px;
+    bottom: 0;
 }
 
 .text {
@@ -373,3 +375,6 @@ a:hover {
     width: 600px;
 }
 
+#mc_embed_signup form {
+    background-color: #000;
+}
