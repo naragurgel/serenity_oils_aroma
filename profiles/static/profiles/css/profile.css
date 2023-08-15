@@ -20,7 +20,8 @@
     color: #aab7c4;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
-    min-height: calc(100vh - 196px);
+@media (min-width: 989px) {
+    .tittle {
+        margin-top: 4rem!important;
+    }
 }

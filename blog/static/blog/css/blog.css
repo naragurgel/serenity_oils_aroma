@@ -73,7 +73,7 @@ body {
 }
 
 .masthead-image {
-    margin-top: 12rem;
+    margin-top: 2rem;
 }
 
 .img-fluid {
@@ -117,10 +117,9 @@ a.signup-blog-link {
 
 /* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
 @media (max-width: 976px) and (min-width: 320px) {
-    .masthead {
-        margin-top: -71px;
+    .detailposition {
+        margin-top: 5rem;
     }
-    
 }
 
 /* Breakpoint: 769px (Smaller Tablets & Smartphones) */
@@ -138,5 +137,24 @@ a.signup-blog-link {
         max-width: 100%;
         height: auto;
     }
-    
+}
+
+/* Breakpoint: 976px Large screens */
+@media (min-width: 976px) {
+    .detailposition {
+        margin-top: 5rem;
+    }
+}
+
+/* Breakpoint: 992px Large screens */
+@media (min-width: 992px) {
+    .detailposition {
+        margin-top: 16rem;
+    }
+}
+
+@media (min-width: 989px) {
+    .tittle {
+        margin-top: 3rem;
+    }
 }

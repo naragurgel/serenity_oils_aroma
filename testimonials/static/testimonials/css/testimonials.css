@@ -6,16 +6,19 @@ body {
 .text-black-blog {
     color: #000 !important;
     font-size: 40px;
-   
+    margin-top: 1.5rem;
 }
 
-.fa-heart {
-    font-size: 16px;
-    color: #dc3545;
+.tittle {
+    margin-top: 2rem;
 }
 
-.btn-like {
-    border: none;
+.testimonialadd {
+    margin-top: 3rem;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: 0.5rem!important;
 }
 
 .image-container {
@@ -96,18 +99,6 @@ form {
     margin-right: 7px ;
 }
 
-.btn-like {
-    color: #e84610;
-    border: none;
-    background: transparent !important;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #e84610;
-    background: transparent !important;
-    border: none;
-}
 
 a.signup-blog-link {
     color: #000 !important;

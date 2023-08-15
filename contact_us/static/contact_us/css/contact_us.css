@@ -8,10 +8,6 @@ body {
     min-height: calc(100vh - 196px);
 }
 
-.contact {
-    margin-top: 3rem;
-}
-
 .text-black-blog {
     color: #000 !important;
     font-size: 40px;
