@@ -38,7 +38,7 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 
 ### Structure
 #### User Stories
-- There are 26 user's stories were generated using an agile approach in a *"As a [role], I can [action], so that [benefit]"* format with acceptance criteria in declarative gherkin syntax.
+- There are 33 user's stories were generated using an agile approach in a *"As a [role], I can [action], so that [benefit]"* format with acceptance criteria in declarative gherkin syntax.
 - They were recorded as GitHub issues and integrated into a project board within GitHub. [here](https://github.com/users/naragurgel/projects/7) 
 - This approach was employed throughout the development journey to construct the project through gradual increments.
 - The order of implementation was as follows:
