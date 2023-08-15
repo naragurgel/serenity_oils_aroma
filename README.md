@@ -13,15 +13,28 @@ Nara Gurgel
 ## Contents
 CREATE TABLE
 
-## User Experience
+# UX
+Sereny Oils is a dedicated platform that provide a serene experience for aroma enthusiasts and those seeking tranquility in their daily lives. The central objective of the page is to present a diverse collection of essential oils and aromatherapy products that cater to various well-being goals, including relaxation, stress relief, and mood enhancement. Beyond the products, the page is committed to offering insights into the aromatherapy, collaborating with aromatherapy experts, and delivering insightful blog content to guide users on their aromatic journey towards inner calmness and balance.
+
+## Target Audience
+Those seeking sensory harmony and well-being, who value the therapeutic potential of aromatherapy. From individuals new to aromatherapy seeking tranquility in their daily routines to seasoned practitioners aiming to enhance their holistic wellness, the page welcomes a diverse audience. Whether you're looking for a soothing escape from a busy lifestyle or aiming to explore the therapeutic benefits of essential oils.
 
 ### Strategy
 #### Project Goals
-* Build an easy to use and information website inviting online platform dedicated to promoting well-being through aromatherapy.
-* Showcase a variety of natural essential oils, candles, and diffusers to create a serene ambiance.
-* Ensure user can build and edit profile and orders.
-* Create a user friendly payment mechanism.
-* Provide valuable insights into the benefits of aromatherapy, fostering relaxation, mindfulness, and harmony.
+
+**Customer Goals:**
+- <strong>Discover Relaxing Products:</strong> Make it easy for users to find calming essential oils, candles, and diffusers that help create a soothing environment.
+- <strong>Shop Easily:</strong> Provide a website that's easy to use, so customers can quickly learn about products, make choices, and pay securely.
+- <strong>Learn About Aromatherapy:</strong> Offer simple ways for people to explore how using essential oils can boost relaxation, focus, and a peaceful atmosphere.
+- <strong>Get Inspired:</strong> Share practical ideas, tips, and stories in the blog to encourage users to experience the benefits of aromatherapy.
+
+**Business Goals:**
+- <strong>Easy to use:</strong> Provide valuable insights into the benefits of aromatherapy, fostering relaxation, mindfulness, and harmony.
+- <strong>Make Customers Happy:</strong> Giving clear info on products and how they work helps customers feel good about their choices.
+- <strong>Become a Trusted Source:</strong> By teaming up with experts, we aim to be a reliable place for aromatherapy advice and solutions.
+- <strong>Keep Customers Coming Back:</strong> By focusing on making customers happy, we want them to keep choosing us for their relaxation needs.
+- <strong>Spread the Word:</strong> By sharing engaging content and using social media, we want more people to discover the benefits of our products.
+- <strong>Keep Getting Better:</strong> Listening to what customers say and looking at data helps us keep making the website even better for everyone.
 
 ### Structure
 #### User Stories
