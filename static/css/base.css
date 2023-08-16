@@ -387,3 +387,7 @@ footer {
     background-color: #000;
 }
 
+
+ul.mobile-nav {
+    display: contents;
+}
