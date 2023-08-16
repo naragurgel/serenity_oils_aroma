@@ -347,7 +347,7 @@ input[name='q']::placeholder {
 
 @media (min-width: 989px) {
     .mt-3 {
-        margin-top: 4rem!important;
+        margin-top: 4rem !important;
     }
 }
 

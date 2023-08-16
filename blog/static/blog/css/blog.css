@@ -118,7 +118,7 @@ a.signup-blog-link {
 /* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
 @media (max-width: 976px) and (min-width: 320px) {
     .detailposition {
-        margin-top: 5rem;
+        margin-top: 5rem !important;
     }
 }
 
@@ -142,19 +142,19 @@ a.signup-blog-link {
 /* Breakpoint: 976px Large screens */
 @media (min-width: 976px) {
     .detailposition {
-        margin-top: 5rem;
+        margin-top: 5rem !important;
     }
 }
 
 /* Breakpoint: 992px Large screens */
 @media (min-width: 992px) {
     .detailposition {
-        margin-top: 16rem;
+        margin-top: 16rem !important;
     }
 }
 
 @media (min-width: 989px) {
     .tittle {
-        margin-top: 3rem;
+        margin-top: 3rem !important;
     }
 }

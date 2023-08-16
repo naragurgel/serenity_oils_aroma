@@ -10,11 +10,11 @@ body {
 }
 
 .tittle {
-    margin-top: 2rem;
+    margin-top: 2rem !important;
 }
 
 .testimonialadd {
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 }
 
 .mb-2, .my-2 {
