@@ -1,10 +1,11 @@
-from django.shortcuts import render, get_object_or_404, reverse, render, redirect
+from django.shortcuts import render, get_object_or_404, reverse, render, redirect  # noqa
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post
+
 
 class PostList(generic.ListView):
     """
@@ -20,7 +21,6 @@ class PostDetail(View):
     """
     A view to display a single blog post and check if the user has liked it 
     """
-
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -63,7 +63,6 @@ def favorite_list(request):
     """
     user = request.user
     favorite_posts = user.favorite.all()  
-
     context = {'favorite_posts': favorite_posts}
     return render(request, 'blog/favourite_list.html', context)
 
