@@ -154,7 +154,7 @@ IMAGE HERE
 - I selected the 'Lato' font-family for the Serenity Oils website due to its excellent legibility and modern appearance. With a clean and professional aesthetic, 'Lato' ensures a pleasant reading experience for users while maintaining compatibility across various devices and browsers. Its versatile nature also allows for consistent use in both headings and body text, contributing to the site's overall cohesive and contemporary design, which complements the soothing and natural theme of aromatherapy products.
 
 ### Images
-
+HERE
 
 ### Design Elements
 
@@ -198,7 +198,60 @@ For the Serenity Oils website, I've chosen to use the Bootstrap framework. I pic
  **[JS- CHECKOUT](checkout/static/checkout/js/stripe_elements.js)**
  **[JS- PROFILES](profiles/static/profiles/js/countryfield.css)**
 
+## Wireframes
 
+HERE
 
+- <strong>Home Page</strong>
 
+- <strong>Products</strong>
 
+- <strong>Products Details</strong>
+
+- <strong>Special Offers(New Arrivels)</strong>
+
+- <strong>Blog</strong>
+
+- <strong>Blog post details</strong>
+
+- <strong>My Favorites Post List</strong>
+
+- <strong>Testimonials</strong>
+
+- <strong>Add Testimonial or Edit Testimonial</strong>
+
+- <strong>Contact Us</strong>
+
+- <strong>Profile</strong>
+
+## Information Architecture
+In the Serenity Oils website, I've structured the data model using Django's models to deliver engaging and valuable content to our users. Here's how the information architecture is organized:
+
+<strong>1- Blog Model:</strong>
+- Blog Post Title (CharField): The title of the blog post (max length: 200 characters).
+- Slug (SlugField): A URL-friendly version of the title used in the blog post's URL.
+- Author (ForeignKey): A reference to the user model, indicating the author of the post.
+- Updated On (DateTimeField): The date and time when the blog post was last updated.
+- Content (TextField): The main content of the blog post.
+- Featured Image (ImageField): An optional image associated with the blog post.
+- Excerpt (TextField): A brief summary of the blog post.
+- Created On (DateTimeField): The date and time when the blog post was created.
+- Status (IntegerField): Indicates if the post is a draft or published (0: Draft, 1: Published).
+- Likes (ManyToManyField): A relationship with the user model, allowing users to like the post.
+- Favorites (ManyToManyField): A relationship with the user model, enabling users to mark posts as favorites.
+
+<strong>2- Testimonials Model:</strong>
+- Testimonial Title (CharField): The title of the testimonial (max length: 200 characters).
+- Slug (SlugField): A URL-friendly version of the title used in the testimonial's URL.
+- Author (ForeignKey): A reference to the user model, showing the author of the testimonial.
+- Content (TextField): The main content of the testimonial.
+- Created On (DateTimeField): The date and time when the testimonial was created.
+- Status (IntegerField): Indicates if the testimonial is a draft or published (0: Draft, 1: Published).
+- Updated On (DateTimeField): The date and time when the blog post was last updated.
+- Rating (IntegerField): The rating assigned to the testimonial, reflecting user satisfaction.
+
+<strong>3- Contact Us Model:</strong>
+- User Name (CharField): The name of the user contacting us.
+- User Email (EmailField): The email address of the user.
+- Subject (CharField): The subject of the user's inquiry.
+- Message (TextField): The message provided by the user.
