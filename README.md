@@ -180,6 +180,23 @@ IMAGE HERE
 
 For the Serenity Oils website, I've chosen to use the Bootstrap framework. I picked this because it help me make the website look good and work well. Bootstrap gives tools to organize the layout so it fits on different screens, like computers and phones. Bootstrap also provides ready-made pieces that we can use, like buttons and forms, which saves us time when building. We like that we can change how these pieces look to match our website's calming and natural style. We went with Bootstrap because it's like a toolbox that helps us create a website that's easy to use and looks nice. Plus, lots of people use it, so if we have any problems, we can find help easily. It's like having a helper while building our website.
 
+### Custom Styles
+
+- I made some changes to the fonts, font sizes and colours of the fonts and background. It's all in these folders:
+
+ **[CSS- BASE](static/css/base.css)**
+ **[CSS- BLOG](blog/static/blog/blog.css)**
+ **[CSS- CHECKOUT](checkout/static/checkout/css/checkout.css)**
+ **[CSS- CONTACT US](contact_us/static/contact_us/contact_us.css)**
+ **[CSS- PROFILES](profiles/static/profiles/css/profiles.css)**
+ **[CSS- TESTIMONIALS](testimonials/static/testimonials/testimonials.css)**
+
+### Custom Javascript
+
+- The changes for JS are in these folders:
+
+ **[JS- CHECKOUT](checkout/static/checkout/js/stripe_elements.js)**
+ **[JS- PROFILES](profiles/static/profiles/js/countryfield.css)**
 
 
 
