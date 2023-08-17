@@ -36,6 +36,13 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 - <strong>Spread the Word:</strong> By sharing engaging content and using social media, we want more people to discover the benefits of our products.
 - <strong>Keep Getting Better:</strong> Listening to what customers say and looking at data helps us keep making the website even better for everyone.
 
+**Owner Goals:**
+- <strong>Provide High-Quality Information:</strong> The website aims to serve as an authoritative source of information about essential oils and aromatherapy.
+- <strong>Enhance User Experience:</strong> The page strive to create an intuitive and visually appealing website design that allows visitors to navigate effortlessly through our content and products. A user-friendly experience will encourage longer visits and repeat interactions.
+- <strong>Build Trust and Credibility: </strong>Establishing trust with our audience is paramount, providing accurate product descriptions, detailed information about essential oils, and transparent customer service to build a loyal customer base.
+- <strong>Encourage User Engagement: </strong>This involves encouraging user interaction through blog comments, testimonials, and sharing experiences.
+- <strong>Offer Safe and Secure Shopping:</strong> For visitors interested in purchasing our products, Serenity Oils page prioritize providing a secure and seamless shopping experience. Customer information will be protected, and payment processes will be reliable.
+- <strong>Collect Customer Feedback: </strong>Feedback is vital for improvement.
 ### Structure
 #### User Stories
 - There are 33 user's stories were generated using an agile approach in a *"As a [role], I can [action], so that [benefit]"* format with acceptance criteria in declarative gherkin syntax.
@@ -91,3 +98,90 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 | 32 	| As a admin I can manage the reviews received on the website so that I can make sure they are real and appropriate for the page                                                                 	| MEDIUM       	|
 | 33 	| As a Admin I can access customer orders, total of each order and product details so that I can create a efficient user experience and have a better control of product and stock.              	| HIGH         	|
 | 34 	| As a admin I can create, update, edit and delete any post on the blog so that I can manage the content effectively                                                                             	| MEDIUM       	|
+
+## Feasibility vs Importance
+
+| Opportunity/Feature                         | Feasibility/Viability | Importance Level | In Or Out |
+|---------------------------------------------|-----------------------|------------------|-----------|
+| User Registration/Login                     | 5                     | 5                | In        |
+| Products Section                            | 5                     | 5                | In        |
+| Product Search                              | 4                     | 4                | In        |
+| Product Details                             | 5                     | 4                | In        |
+| Add to Bag                                  | 5                     | 5                | In        |
+| Shopping Bag                                | 5                     | 5                | In        |
+| Checkout & Payment                          | 5                     | 5                | In        |
+| Order Confirmation                          | 5                     | 4                | In        |
+| User Profile & Account                      | 4                     | 4                | In        |
+| Blog Section                                | 4                     | 3                | In        |
+| My Favorites Post                           | 4                     | 3                | In        |
+| Contact Us Form                             | 5                     | 4                | In        |
+| Testimonials & Rating                       | 4                     | 4                | In        |
+| Newsletter Subscription                     | 4                     | 4                | In        |
+| Social Media Links                          | 5                     | 3                | In        |
+| Mobile App                                  | 3                     | 5                | Out       |
+| Add ads to generate renevue from businesses | 3                     | 3                | Out       |
+| Add SALES section                           | 3                     | 5                | Out       |
+
+- The page is prioritizing features based on how practical and workable they are (feasibility) and how significant they are to the website's success (importance).
+- Features with high feasibility and high importance are at the core of the website's functionality and will be included in our initial development.
+- Features with high feasibility but slightly lower importance might be part of the development too, but they won't be our main focus initially.
+- The goal is to deliver a website that effectively meets the needs of users and supports the business goals, so the focus will be on the "In" features.
+- For instance, enabling users to add posts to their favorites and sharing their testimonials and ratings are essential as they enhance user engagement and trust.
+- I havent't create a mobile app, add to generate revenue for businesses and SALES section because the goal is to prioritize the essencial feature, but they will be on the list for the future.
+
+## Scope
+
+-<strong>Basic Product Catalog:</strong> Initially, offer a smaller range of essential oils and products to keep the catalog simple and manageable.
+-<strong>Essential Information:</strong> Provide essential information about aromatherapy and a few select products, focusing on quality rather than quantity.-
+-<strong>Simplified Checkout:</strong> Start with a basic checkout process that includes only essential fields, excluding optional features.
+-<strong>Limited Blog Content:</strong> Begin with a smaller number of blog posts that cover the most essential topics related to aromatherapy.
+-<strong>Single Payment Option:</strong> Start with one payment method, such as credit/debit cards, and delay integrating other payment options.
+-<strong>Basic Design:</strong> Begin with a simple and clean website design, focusing on functionality rather than elaborate visual elements.
+-<strong>Limited Contact Options:</strong> Provide a simple contact form for user inquiries, without extensive customer support channels.
+
+The reduced scope approach allows for a quicker and more focused website launch, providing room for gradual expansion and enhancement based on user feedback and business growth.
+
+## Design Choices
+
+### Colors
+
+IMAGE HERE
+
+-  The color palette reflects the natural, calming, and organic essence of aromatherapy. The warm browns, beige, and soft grays create a harmonious and inviting atmosphere, while the white background ensures readability and a clean user experience. It's important to use these colors consistently throughout the webpage to maintain a cohesive and visually appealing design.
+
+### Typography
+
+- I selected the 'Lato' font-family for the Serenity Oils website due to its excellent legibility and modern appearance. With a clean and professional aesthetic, 'Lato' ensures a pleasant reading experience for users while maintaining compatibility across various devices and browsers. Its versatile nature also allows for consistent use in both headings and body text, contributing to the site's overall cohesive and contemporary design, which complements the soothing and natural theme of aromatherapy products.
+
+### Images
+
+
+### Design Elements
+
+> - desktop navigation
+> - mobile navigation
+> - footer
+> - containers/cards
+> - buttons
+> - text input
+> - textarea inputs
+> - dropdowns
+> - modals/layers
+> - check boxes
+> - accordions/drawers
+> - pagination
+> - images
+> - tooltips
+> - icons
+> - tabbed content
+> - Forms
+
+### Frameworks
+
+For the Serenity Oils website, I've chosen to use the Bootstrap framework. I picked this because it help me make the website look good and work well. Bootstrap gives tools to organize the layout so it fits on different screens, like computers and phones. Bootstrap also provides ready-made pieces that we can use, like buttons and forms, which saves us time when building. We like that we can change how these pieces look to match our website's calming and natural style. We went with Bootstrap because it's like a toolbox that helps us create a website that's easy to use and looks nice. Plus, lots of people use it, so if we have any problems, we can find help easily. It's like having a helper while building our website.
+
+
+
+
+
+
