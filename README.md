@@ -225,7 +225,7 @@ HERE
 - <strong>Profile</strong>
 
 ## Information Architecture
-In the Serenity Oils website, I've structured the data model using Django's models to deliver engaging and valuable content to our users. Here's how the information architecture is organized:
+In the Serenity Oils website, I've structured the data model using Django's models to deliver engaging and valuable content to the users. Here's how the information architecture is organized:
 
 <strong>1- Blog Model:</strong>
 - Blog Post Title (CharField): The title of the blog post (max length: 200 characters).
@@ -255,3 +255,10 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - User Email (EmailField): The email address of the user.
 - Subject (CharField): The subject of the user's inquiry.
 - Message (TextField): The message provided by the user.
+
+## Entity Relationship Diagram
+
+CREATE
+
+## Database Choice
+For the Serenity Oils website, i've opted to utilize PostgreSQL as our database. This decision was made by the fact that our data exhibits a relational structure, and the use of PostgreSQL aligns with the hosting platform, Heroku. This choice not only facilitates smooth and cost-effective database management but also ensures the efficient handling of our website's data in a relational context.

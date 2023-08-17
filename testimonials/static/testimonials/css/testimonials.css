@@ -134,5 +134,5 @@ a.signup-blog-link {
 }
 
 iframe#id_content_iframe {
-    max-width: 100%;
+    max-width: 100% !important;
 }
