@@ -7,6 +7,7 @@ You can view the deployed website [here](https://serenity-oils-3beb26e98281.hero
 
 ## Github
 [Serenity Oils](https://github.com/naragurgel/serenity_oils_aroma)
+
 ## Author
 Nara Gurgel
 
@@ -131,13 +132,13 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 
 ## Scope
 
--<strong>Basic Product Catalog:</strong> Initially, offer a smaller range of essential oils and products to keep the catalog simple and manageable.
--<strong>Essential Information:</strong> Provide essential information about aromatherapy and a few select products, focusing on quality rather than quantity.-
--<strong>Simplified Checkout:</strong> Start with a basic checkout process that includes only essential fields, excluding optional features.
--<strong>Limited Blog Content:</strong> Begin with a smaller number of blog posts that cover the most essential topics related to aromatherapy.
--<strong>Single Payment Option:</strong> Start with one payment method, such as credit/debit cards, and delay integrating other payment options.
--<strong>Basic Design:</strong> Begin with a simple and clean website design, focusing on functionality rather than elaborate visual elements.
--<strong>Limited Contact Options:</strong> Provide a simple contact form for user inquiries, without extensive customer support channels.
+- <strong>Basic Product Catalog:</strong> Initially, offer a smaller range of essential oils and products to keep the catalog simple and manageable.
+- <strong>Essential Information:</strong> Provide essential information about aromatherapy and a few select products, focusing on quality rather than quantity.-
+- <strong>Simplified Checkout:</strong> Start with a basic checkout process that includes only essential fields, excluding optional features.
+- <strong>Limited Blog Content:</strong> Begin with a smaller number of blog posts that cover the most essential topics related to aromatherapy.
+- <strong>Single Payment Option:</strong> Start with one payment method, such as credit/debit cards, and delay integrating other payment options.
+- <strong>Basic Design:</strong> Begin with a simple and clean website design, focusing on functionality rather than elaborate visual elements.
+- <strong>Limited Contact Options:</strong> Provide a simple contact form for user inquiries, without extensive customer support channels.
 
 The reduced scope approach allows for a quicker and more focused website launch, providing room for gradual expansion and enhancement based on user feedback and business growth.
 
@@ -184,19 +185,19 @@ For the Serenity Oils website, I've chosen to use the Bootstrap framework. I pic
 
 - I made some changes to the fonts, font sizes and colours of the fonts and background. It's all in these folders:
 
- **[CSS- BASE](static/css/base.css)**
- **[CSS- BLOG](blog/static/blog/blog.css)**
- **[CSS- CHECKOUT](checkout/static/checkout/css/checkout.css)**
- **[CSS- CONTACT US](contact_us/static/contact_us/contact_us.css)**
- **[CSS- PROFILES](profiles/static/profiles/css/profiles.css)**
- **[CSS- TESTIMONIALS](testimonials/static/testimonials/testimonials.css)**
+ - **[CSS- BASE](static/css/base.css)**
+ - **[CSS- BLOG](blog/static/blog/blog.css)**
+ - **[CSS- CHECKOUT](checkout/static/checkout/css/checkout.css)**
+ - **[CSS- CONTACT US](contact_us/static/contact_us/contact_us.css)**
+ - **[CSS- PROFILES](profiles/static/profiles/css/profiles.css)**
+ - **[CSS- TESTIMONIALS](testimonials/static/testimonials/testimonials.css)**
 
 ### Custom Javascript
 
 - The changes for JS are in these folders:
 
- **[JS- CHECKOUT](checkout/static/checkout/js/stripe_elements.js)**
- **[JS- PROFILES](profiles/static/profiles/js/countryfield.css)**
+ - **[JS- CHECKOUT](checkout/static/checkout/js/stripe_elements.js)**
+ - **[JS- PROFILES](profiles/static/profiles/js/countryfield.css)**
 
 ## Wireframes
 
@@ -224,7 +225,16 @@ HERE
 
 - <strong>Profile</strong>
 
-## Information Architecture
+# Information Architecture
+
+## Entity Relationship Diagram
+
+CREATE
+
+## Database Choice
+For the Serenity Oils website, i've opted to utilize PostgreSQL as our database. This decision was made by the fact that our data exhibits a relational structure, and the use of PostgreSQL aligns with the hosting platform, Heroku. This choice not only facilitates smooth and cost-effective database management but also ensures the efficient handling of our website's data in a relational context.
+
+## Data Models
 In the Serenity Oils website, I've structured the data model using Django's models to deliver engaging and valuable content to the users. Here's how the information architecture is organized:
 
 <strong>1- Blog Model:</strong>
@@ -248,7 +258,6 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - Created On (DateTimeField): The date and time when the testimonial was created.
 - Status (IntegerField): Indicates if the testimonial is a draft or published (0: Draft, 1: Published).
 - Updated On (DateTimeField): The date and time when the blog post was last updated.
-- Rating (IntegerField): The rating assigned to the testimonial, reflecting user satisfaction.
 
 <strong>3- Contact Us Model:</strong>
 - User Name (CharField): The name of the user contacting us.
@@ -256,9 +265,57 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - Subject (CharField): The subject of the user's inquiry.
 - Message (TextField): The message provided by the user.
 
-## Entity Relationship Diagram
+> ### Activities Model
 
-CREATE
+<strong>1- Blog Model:</strong>
 
-## Database Choice
-For the Serenity Oils website, i've opted to utilize PostgreSQL as our database. This decision was made by the fact that our data exhibits a relational structure, and the use of PostgreSQL aligns with the hosting platform, Heroku. This choice not only facilitates smooth and cost-effective database management but also ensures the efficient handling of our website's data in a relational context.
+| DB Key         | Data Type             | Purpose                                                                       | Form Validation                      | DB Processing   |
+|----------------|-----------------------|-------------------------------------------------------------------------------|--------------------------------------|-----------------|
+| title          | CharField             | Title of the blog post                                                        | Required, Max length: 200 characters | Trim            |
+| slug           | SlugField             | URL-friendly version of the title                                             | Required, Max length: 200 characters | Trim, lowercase |
+| author         | ForeignKey(User)      | Reference to the user model, indicating the Author                            | Reference to User Model              |                 |
+| updated_on     | DateTimeField         | The date and time when the blog post was updated                              | Auto-generated on update             |                 |
+| content        | TextField             | The main content of the blog post                                             | Required                             |                 |
+| featured_image | ImageField            | An optional image associated with the blog post                               | Optional                             |                 |
+| excerpt        | TextField             | A short excerpt or summary of the blog post                                   | Optional                             |                 |
+| created_on     | DateTimeField         | The date and time when the blog post was created                              | Auto-generated on creation           |                 |
+| status         | IntegerField          | Indicates whether the post is a draft or published (0: Draft, 1: Published)   | Default: 0 (draft)                   |                 |
+| likes          | ManyToManyField(User) | A relationship with user model, allowing users to like the post               | Reference to User model              |                 |
+| favorites      | ManyToManyField(User) | A relationship with the user model, enabling users to mark posts as favorites | Reference to User model              |                 |
+
+- <strong> Create</strong> - Administrators create blog posts to provide valuable content.
+- <strong> Read</strong> - Blog posts are accessible to users in the blog section of the website.
+- <strong> Update</strong> - Administrators can edit blog posts to make improvements.
+- <strong> Delete</strong> - Administrators can remove blog posts that are no longer relevant.
+
+<strong>2- Testimonials Model:</strong>
+
+| DB Key     | Data Type     | Purpose                                                                       | Form Validation                                             | DB Processing   |
+|------------|---------------|-------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------|
+| title      | CharField     | Title of the testimonial                                                      | Required, Max length: 200 characters                        | Trim            |
+| slug       | SlugField     | URL-friendly version of the title for the testimonial's URL                   | URL-friendly version of the title for the testimonial's URL | Trim, lowercase |
+| author     | ForeignKey    | Reference to the user model, indicating the author of the testimonial         | Reference to User Model                                     | Trim            |
+| content    | TextField     | Main content of the testimonial                                               | Required                                                    |                 |
+| created_on | DateTimeField | Date and time when the testimonial was created                                | Auto-generated on creation                                  |                 |
+| status     | IntegerField  | Indicates if the testimonial is a draft or published (0: Draft, 1: Published) | Default: 0 (draft)                                          |                 |
+| updated_on | DateTimeField | Date and time when the testimonial was last updated                           | Auto-generated on update                                    |                 |
+
+- <strong> Create</strong> - Users have the opportunity to express their thoughts and satisfaction by submitting testimonials.
+- <strong> Read</strong> - Administrators have the ability to review the testimonials that have been submitted. 
+- <strong> Update</strong> - Admins can make necessary updates to testimonials, including changing their status from draft to published. 
+- <strong> Delete</strong> - Admins can remove testimonials that are no longer relevant or suitable for display.
+
+<strong>3- Contact Us Model:</strong>
+
+| DB Key  | Data Type  | Purpose                                 | Form Validation                      | DB Processing   |
+|---------|------------|-----------------------------------------|--------------------------------------|-----------------|
+| name    | CharField  | Name of the user submitting the inquiry | Required, Max length: 100 characters | Trim            |
+| email   | EmailField | Email address of the user               | Required                             | Trim, lowercase |
+| subject | CharField  | Subject of the inquiry                  | Required, Max length: 200 characters | Trim            |
+| message | TextField  | Message content from the user           | Required                             |                 |
+
+- <strong> Create</strong> - Users initiate contact by submitting their inquiries and messages.
+- <strong> Read</strong> - Admins and support staff access and review user inquiries.
+- <strong> Update</strong> - Admins can respond to inquiries to provide assistance.
+- <strong> Delete</strong> - Admins can remove inquiries that have been addressed or are no longer needed.
+
