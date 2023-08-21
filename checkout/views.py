@@ -1,6 +1,9 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse
 )
+from django.core import signing
+from django.core.mail import send_mail
+from django.utils.http import urlencode
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -138,6 +141,46 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+
+    if not order.user_profile:
+        order_email = order.email
+        token = request.GET.get("token")
+
+        # if token exists we check to see if the email is the same from order
+        if token:
+            # Max age of 15 minutes
+            data = signing.loads(token, max_age=900)
+            email = data.get("email")
+            if not email:
+                return redirect("/") # show error saying email is inexistent
+            if email != order_email:
+                return HttpResponse('Unauthorized', status=401)
+        else:
+            token = signing.dumps({'email': order.email})
+            order_link = reverse('checkout_success',
+            kwargs={'order_number': order_number}
+            )
+            access_link = f'{order_link}?{urlencode({"token": token})}'
+            subject = render_to_string(
+                'checkout/confirmation_emails/confirmation_email_subject.txt',
+                {'order': order})
+            body = render_to_string(
+                'checkout/confirmation_emails/confirmation_email_body.txt',
+                {
+                    'link': access_link,
+                    'order': order,
+                    'contact_email': settings.DEFAULT_FROM_EMAIL
+                 })
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [order_email]
+            )
+            return HttpResponse('Unauthorizeddddd', status=401) # make correct unauth call
+
+    elif order.user_profile.user != request.user:
+         return HttpResponse('Unauthorized', status=401) # make correct unauth call
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)

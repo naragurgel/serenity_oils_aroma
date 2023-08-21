@@ -1,0 +1,15 @@
+Hello {{ order.full_name }}!
+
+To access your order of number  {{ order.order_number }}
+
+Please follow the link provided below 
+
+{{ link }}
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Serenity Oils
