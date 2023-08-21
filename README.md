@@ -1,5 +1,6 @@
 # Serenity Oils - Essential Oils Aroma
-Am I Responsive image HERE!
+
+![image (6)](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/555b82f9-f9c6-4304-a70d-6e1ac8239e1a)
 
 Serenity Oils is a online page that offers natural essential oils aromas, candles and diffusers. You can explore the benefits of aromatherapy with essential oils for relaxation, mindfulness, harmonious atmosphere and much more. 
 
@@ -48,6 +49,8 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 ### Structure
 #### User Stories
 - There are 33 user's stories were generated using an agile approach in a *"As a [role], I can [action], so that [benefit]"* format with acceptance criteria in declarative gherkin syntax.
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3e345c8d-1d87-407f-a824-71bac3d7ea8d)
+
 - They were recorded as GitHub issues and integrated into a project board within GitHub. [here](https://github.com/users/naragurgel/projects/7) 
 - This approach was employed throughout the development journey to construct the project through gradual increments.
 - The order of implementation was as follows:
@@ -153,7 +156,7 @@ The reduced scope approach allows for a quicker and more focused website launch,
 
 ### Colors
 
-IMAGE HERE
+![colors](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/363f46ba-aab6-402e-ad11-d52f13f045b8)
 
 -  The color palette reflects the natural, calming, and organic essence of aromatherapy. The warm browns, beige, and soft grays create a harmonious and inviting atmosphere, while the white background ensures readability and a clean user experience. It's important to use these colors consistently throughout the webpage to maintain a cohesive and visually appealing design.
 
@@ -335,32 +338,88 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 **Navigation:**
 
 - Desktop
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/4e9e61e4-4d5e-4fe4-9c54-9a9c751e8581)
 
+- Tablet
+  
 - Mobile
 
 **Sign in/ Sign up:**
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e38ab59a-877c-4db2-b414-9e690104f296)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d02c963e-4cc0-4158-a5d0-39a89a7f39d3)
+
 **Products Page:**
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7eededa5-a36d-4db0-b9a1-51e35319d759)
+
+**Product Detail**
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/15ba4aa2-6538-4492-abdf-13fcfd988588)
 
 **Bag & Checkout:**
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a9876c1a-e19f-4c94-b845-fcc5267b816a)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/9246dfb9-7c19-415b-b709-15994595c871)
+
 **Profile**
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/79d42d38-7ff4-4abe-a47d-d6d74df41549)
 
 **Blog**
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ddf1fe08-9a08-4134-9fc5-3782b04de1a3)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e1cd9ac9-f70e-4da6-866e-d0fbcb871431)
+
 **Favorites Post Blog**
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/abee07bd-c23f-4306-8aae-d6dd6b92b834)
 
 **Contact Us**
 
 **Testimonials**
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/56758542-4fef-4d4a-8269-2030f8178c8a)
+
 **Footer**
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ada0fb18-4468-44a9-801a-819e00913fbb)
 
 **Messages Notifications:**
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ab92b8a0-e0f5-4482-977a-11af7d785450)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ca366b65-d6e1-4be5-8905-7613bfa97b9b)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/9a421d80-1229-46a8-85c4-c8b0269fa9d6)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/be5f9f4e-20af-4f2f-a4c2-0c9fe085883f)
+
 **Admin Permissions:**
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3db988ba-e1a5-4138-87de-3867c094d09e)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/1136eaaa-5423-4148-af3e-858d7931efd3)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/5b97ba22-995f-415a-8db3-63248db543a4)
+
+
 **Error 400/404/403/500**
+
+- 404
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7aa1d8c8-d3e2-410e-ace3-bc975ba6cd87)
+
+-400
+    ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a7e9c0cd-1cde-43e9-9e86-acf44f968437)
+
+-403
+    ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/005a6d53-e65d-4906-a8a2-b31e6d34f044)
+
+-500
+    ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/990dd1fc-ba97-4e5f-a46e-0107f78b46ec)
 
 # Future Features
 
