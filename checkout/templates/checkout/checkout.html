@@ -3,9 +3,11 @@
 {% load bag_tools %}
 
 {% block extra_css %}
+    <!-- INCLUDE CUSTOM CSS FOR THE CHECKOUT PAGE -->
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+<!-- BLOCK PAGE HEADER -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -15,6 +17,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- CONTENT BLOCK FOR DISPLAYING ORDER SUMMARY -->
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

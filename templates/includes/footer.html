@@ -1,0 +1,84 @@
+{% load static %}
+{% block content %}
+
+<footer id='footer' class="text-black bg-black pt-4">
+  <div class="container-fluid bg-black text-center">
+    <div class="row pt-2">
+      <!-- Social media-->
+      <div class="col-12 col-lg-4 align-self-center bg-black logo-font">
+        <p class="text-white">Check our page on social media!</p>
+        <a class="px-3 text-white social-links" href="https://www.facebook.com/profile.php?id=61550489067285" target="_blank" rel="noopener noreferrer nofollow" aria-label="Click to open Facebook page"><i class="fa-brands fa-facebook fa-3x"></i></a>
+        <a class="px-3 text-white social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow" aria-label="Click to open Instagram"><i class="fa-brands fa-instagram fa-3x"></i></a>
+        <a class="px-3 text-white social-links" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer nofollow" aria-label="Click to open Youtube"><i class="fa-brands fa-youtube fa-3x"></i></a>
+      </div>
+      <!-- Privacy policy-->
+      <div class="col-12 col-lg-4 align-self-center bg-black logo-font">
+        <a class="text-white social-links text-decoration-none" href="https://www.privacypolicygenerator.info/live.php?token=uFXKM1zLOEB0h8U7jhLbgc4OIuqWWKHe" target="_blank" rel="noopener noreferrer nofollow" aria-label="Click to see Privacy policy"><p>Privacy policy</p></a>
+      </div>
+      <!-- Newsletter-->
+      <div class="col-12 col-lg-4 d-flex justify-content-center">
+        <!-- Begin Mailchimp Signup Form -->
+        <div class="mc_embed_signup bg-black py-1">
+          <form action="https://herokuapp.us21.list-manage.com/subscribe/post?u=3ae61afbedfb2d42ff96168e7&amp;id=1030cb583f&amp;f_id=005edde6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate bg-black" target="_blank" novalidate="novalidate">
+            <div id="mc_embed_signup_scroll">
+              <p class="text-white logo-font"><strong>Subscribe for Newsletters!</strong></p>
+              <div class="mc-field-group">
+                <label class="text-white" for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required="" aria-required="true">
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+              </div>
+              <div id="mce-responses" class="clear foot d-flex justify-content-center">
+                <div class="response" id="mce-error-response" style="display: none"></div>
+                <div class="response" id="mce-success-response" style="display: none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input type="text-white" name="b_073a533c50db2ea4332023de4_84c82355af" tabindex="-1" value="">
+              </div>
+              <div class="optionalParent d-flex justify-content-center">
+                <div class="clear foot">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-white">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="btt-button shadow-sm border border-black bg-white">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto" aria-hidden="true"></i>
+        </a>	
+    </div>
+        </div>
+        <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        <script>
+          (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = "EMAIL";
+            ftypes[0] = "email";
+            fnames[1] = "FNAME";
+            ftypes[1] = "text";
+            fnames[2] = "LNAME";
+            ftypes[2] = "text";
+            fnames[3] = "ADDRESS";
+            ftypes[3] = "address";
+            fnames[4] = "PHONE";
+            ftypes[4] = "phone";
+            fnames[5] = "BIRTHDAY";
+            ftypes[5] = "birthday";
+          })(jQuery);
+          var $mcj = jQuery.noConflict(true);
+        </script>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+      <!-- Project's github page -->
+      <div class="col-12 text-center">
+        <a class="text-text text-white social-links text-decoration-none" href="https://github.com/naragurgel/serenity_oils_aroma/" target="_blank" rel="noopener noreferrer nofollow" aria-label="Click to see author's github"><i class="fa-brands fa-github"></i> Serenity Oils Project 2023</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}

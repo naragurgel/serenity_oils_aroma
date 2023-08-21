@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block extra_css %}
+    <!-- INCLUDE CUSTOM CSS FOR THE CONTACT US PAGE -->
     <link rel="stylesheet" href="{% static 'contact_us/css/contact_us.css' %}">
 {% endblock %}
 
 {% block page_header %}
+    <!-- BLOCK PAGE HEADER -->
     <div class="container header-container">
         <div class="row">
             <div class="col text-center">
@@ -17,6 +19,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- BLOCK SUCCESS MSG SUBMITTED -->
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -31,6 +34,7 @@
     </div>
 {% endblock %}
 
+  <!-- CUSTOM JS ALERT MSG-->
 {% block extra_js %}
     {# If form is bound, hide the success message after a few seconds #}
     {% if form.is_bound %}

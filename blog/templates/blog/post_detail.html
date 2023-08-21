@@ -1,11 +1,15 @@
-	{% extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
+
 {% block extra_css %}
     <!-- INCLUDE CUSTOM CSS FOR THE BLOG PAGE -->
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
+
+<!-- BLOCK PAGE HEADER -->
 {% block page_header %}
 {% endblock %}
+
 {% block content %}
 <!-- MASTHEAD SECTION -->
 <div class="masthead">
