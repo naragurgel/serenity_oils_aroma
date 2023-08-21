@@ -83,6 +83,27 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view_bag'))
 
+            if request.user.is_authenticated:
+                profile = UserProfile.objects.get(user=request.user)
+                # Attach the user's profile to the order
+                order.user_profile = profile
+                order.save()
+
+                # Save the user's info
+                if save_info:
+                    profile_data = {
+                        'default_phone_number': order.phone_number,
+                        'default_country': order.country,
+                        'default_postcode': order.postcode,
+                        'default_town_or_city': order.town_or_city,
+                        'default_street_address1': order.street_address1,
+                        'default_street_address2': order.street_address2,
+                        'default_county': order.county,
+                    }
+                    user_profile_form = UserProfileForm(profile_data, instance=profile)
+                    if user_profile_form.is_valid():
+                        user_profile_form.save()
+
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))  # noqa
         else:
@@ -157,17 +178,17 @@ def checkout_success(request, order_number):
                 return HttpResponse('Unauthorized', status=401)
         else:
             token = signing.dumps({'email': order.email})
-            order_link = reverse('checkout_success',
+            checkout_success_link = reverse('checkout_success',
             kwargs={'order_number': order_number}
             )
-            access_link = f'{order_link}?{urlencode({"token": token})}'
+            access_link = f'{checkout_success_link}?{urlencode({"token": token})}'
             subject = render_to_string(
                 'checkout/magic_link/magic_link_email_subject.txt',
                 {'order': order})
             body = render_to_string(
                 'checkout/magic_link/magic_link_email_body.txt',
                 {
-                    'link': access_link,
+                    'link': request.build_absolute_uri(access_link),
                     'order': order,
                     'contact_email': settings.DEFAULT_FROM_EMAIL
                  })
@@ -182,36 +203,15 @@ def checkout_success(request, order_number):
     elif order.user_profile.user != request.user:
          return HttpResponse('Unauthorized', status=401) # make correct unauth call
 
-    if request.user.is_authenticated:
-        profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the order
-        order.user_profile = profile
-        order.save()
-
-        # Save the user's info
-        if save_info:
-            profile_data = {
-                'default_phone_number': order.phone_number,
-                'default_country': order.country,
-                'default_postcode': order.postcode,
-                'default_town_or_city': order.town_or_city,
-                'default_street_address1': order.street_address1,
-                'default_street_address2': order.street_address2,
-                'default_county': order.county,
-            }
-            user_profile_form = UserProfileForm(profile_data, instance=profile)
-            if user_profile_form.is_valid():
-                user_profile_form.save()
-
-            email_to = order.email
-            subject = render_to_string(
-                'checkout/confirmation_emails/confirmation_email_subject.txt',
-                {'order': order})
-            body = render_to_string(
-                'checkout/confirmation_emails/confirmation_email_body.txt',
-                {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-            recipient_list = [request.user.email, ]
-            send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list)  # noqa
+    email_to = order.email
+    subject = render_to_string(
+        'checkout/confirmation_emails/confirmation_email_subject.txt',
+        {'order': order})
+    body = render_to_string(
+        'checkout/confirmation_emails/confirmation_email_body.txt',
+        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+    recipient_list = [request.user.email, ]
+    send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list)  # noqa
 
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
