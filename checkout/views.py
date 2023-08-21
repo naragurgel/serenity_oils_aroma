@@ -173,9 +173,9 @@ def checkout_success(request, order_number):
             data = signing.loads(token, max_age=900)
             email = data.get("email")
             if not email:
-                return redirect("/") # show error saying email is inexistent
+                return redirect("/") # TODO: show error saying email is inexistent
             if email != order_email:
-                return HttpResponse('Unauthorized', status=401)
+                return HttpResponse('Unauthorized', status=401) # send 401
         else:
             token = signing.dumps({'email': order.email})
             checkout_success_link = reverse('checkout_success',
@@ -198,24 +198,28 @@ def checkout_success(request, order_number):
                 settings.DEFAULT_FROM_EMAIL,
                 [order_email]
             )
-            return HttpResponse('Unauthorizeddddd', status=401) # make correct unauth call
+            return HttpResponse('Unauthorizeddddd', status=401) # TODO: show page saying email was sent (render)
 
     elif order.user_profile.user != request.user:
-         return HttpResponse('Unauthorized', status=401) # make correct unauth call
+         return HttpResponse('Unauthorized', status=401) # TODO: make correct unauth call
+    
+    if not order.email_sent:
+        email_to = order.email
+        subject = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'order': order})
+        body = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+        recipient_list = [request.user.email, ]
+        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list)  # noqa
 
-    email_to = order.email
-    subject = render_to_string(
-        'checkout/confirmation_emails/confirmation_email_subject.txt',
-        {'order': order})
-    body = render_to_string(
-        'checkout/confirmation_emails/confirmation_email_body.txt',
-        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-    recipient_list = [request.user.email, ]
-    send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list)  # noqa
+        messages.success(request, f'Order successfully processed! \
+            Your order number is {order_number}. A confirmation \
+            email will be sent to {order.email}.')
+        order.email_sent = True
+        order.save()
 
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
 
     if 'bag' in request.session:
         del request.session['bag']
