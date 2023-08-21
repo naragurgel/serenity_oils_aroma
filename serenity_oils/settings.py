@@ -31,12 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ALLOWED_HOSTS = ['8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu101.gitpod.io',
                  '8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu102.gitpod.io',
-<<<<<<< HEAD
                  '8000-naragurgel-serenityoils-bsvdaa6jme1.ws-eu104.gitpod.io',
-=======
                  '8000-naragurgel-serenityoils-uulmuaupjg1.ws-eu103.gitpod.io',
                  '8000-naragurgel-serenityoils-uulmuaupjg1.ws-eu104.gitpod.io',
->>>>>>> b670b89a06974bb57c2eb07ef74297ce71c2455b
                  'serenity-oils-3beb26e98281.herokuapp.com',
                  'localhost']
 
