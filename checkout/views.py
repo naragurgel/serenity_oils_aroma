@@ -162,10 +162,10 @@ def checkout_success(request, order_number):
             )
             access_link = f'{order_link}?{urlencode({"token": token})}'
             subject = render_to_string(
-                'checkout/confirmation_emails/confirmation_email_subject.txt',
+                'checkout/magic_link/magic_link_email_subject.txt',
                 {'order': order})
             body = render_to_string(
-                'checkout/confirmation_emails/confirmation_email_body.txt',
+                'checkout/magic_link/magic_link_email_body.txt',
                 {
                     'link': access_link,
                     'order': order,
