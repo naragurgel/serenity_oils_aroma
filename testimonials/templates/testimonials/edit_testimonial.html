@@ -1,11 +1,17 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
 {% endblock %}
 
-{% block extra_title %}| Edit Testimonial{% endblock %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
     <div class="container main-container mb-5">

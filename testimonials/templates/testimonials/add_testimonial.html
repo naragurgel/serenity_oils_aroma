@@ -1,16 +1,22 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'testimonial/css/testimonials.css' %}">
+  <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
 {% endblock %}
 
-{% block extra_title %}| Add Testimonial{% endblock %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
     <div class="container main-container mb-5">
         <div class="row">
-            <div class="col-12 col-lg-6 offset-lg-3">
+            <div class="col-12 col-lg-6 offset-lg-3 testimonialadd">
                 <h2 class="logo-font mb-4 text-center">Testimonial Management</h2>
                 <h5 class="text-center">Add a testimonial</h5>
                 <hr>

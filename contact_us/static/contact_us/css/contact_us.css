@@ -3,6 +3,11 @@ body {
     background-color: white;
 }
 
+.main-bg {
+    background-color: #F9FAFC;
+    min-height: calc(100vh - 196px);
+}
+
 .text-black-blog {
     color: #000 !important;
     font-size: 40px;
@@ -119,7 +124,7 @@ form {
 /* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
 @media (max-width: 976px) and (min-width: 320px) {
     .masthead {
-        margin-top: -71px;
+        margin-top: -71px !important;
     }
     
 }
@@ -127,12 +132,12 @@ form {
 /* Breakpoint: 769px (Smaller Tablets & Smartphones) */
 @media (max-width: 769px) {
     .masthead-image {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .masthead-content {
-        margin-left: 0;
-        margin-top: 1rem;
+        margin-left: 0 !important;
+        margin-top: 1rem !important;
     }
 
     .img-fluid {
@@ -141,3 +146,4 @@ form {
     }
     
 }
+

@@ -1,32 +1,26 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
-
-{% block page_header %}
-    <!-- BLOCK PAGE HEADER -->
+{% block content %}
     <div class="container header-container">
         <div class="row">
-            <div class="col">
-            </div>
+            <div class="col"></div>
         </div>
     </div>
-{% endblock %}
-
-{% block content %}
-    <!-- BLOCK NEW COLLECTION -->
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
                 <h1 class="display-4 logo-font text-black">
-                    New Collection!
+                    Bad Request. This page isn't working right now.
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop now</a>
+                        <a href="{% url 'products' %}" 
+                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
+                                Return to shop
+                        </a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
-{% include 'includes/footer.html' %}
 {% endblock %}
-
