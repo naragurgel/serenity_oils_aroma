@@ -7,7 +7,7 @@ from django.utils.http import urlencode
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-from .forms import OrderForm
+from .forms import OrderForm, EmailForm
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
@@ -155,23 +155,8 @@ def checkout_success(request, order_number):
             if email != order.email:
                 return HttpResponseRedirect(reverse('errors/403.html'))
         except (signing.BadSignature, signing.SignatureExpired) as error:
-            subject = render_to_string(
-                'checkout/magic_link/magic_link_email_subject.txt',
-                {'order': order})
-            body = render_to_string(
-                'checkout/magic_link/magic_link_email_body.txt',
-                {
-                    'link': generate_tokenized_link(order, request),
-                    'order': order,
-                    'contact_email': settings.DEFAULT_FROM_EMAIL
-                })
-            send_mail(
-                subject,
-                body,
-                settings.DEFAULT_FROM_EMAIL,
-                [order.email]
-            )
-            return render(request, 'checkout/success_email.html')
+            form = EmailForm()
+            return render(request, 'checkout/email_form.html', {'form', form})
     elif order.user_profile.user != request.user:
         return HttpResponseRedirect(reverse('errors/403.html'))
     
@@ -203,6 +188,32 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@require_POST
+def checkout_confirm_email(request, order_number):
+    order = get_object_or_404(Order, order_number=order_number)
+
+    if order.email != request.POST.get('email'):
+        return HttpResponseRedirect(reverse('errors/403.html'))
+
+    subject = render_to_string(
+        'checkout/magic_link/magic_link_email_subject.txt',
+        {'order': order})
+    body = render_to_string(
+        'checkout/magic_link/magic_link_email_body.txt',
+        {
+            'link': generate_tokenized_link(order, request),
+            'order': order,
+            'contact_email': settings.DEFAULT_FROM_EMAIL
+        })
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [order.email]
+    )
+    return render(request, 'checkout/success_email.html')
 
 
 def generate_tokenized_link(order, request):
