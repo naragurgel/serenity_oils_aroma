@@ -445,50 +445,35 @@ There is messages notifications for each important action taken.
 
 # Testing
 ## Cross Browser and Cross Device Testing
-🚨**Required**
 
-To save time, you can create this type of table
-in [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+- I've tested the compatibility and visual appeal of the website on different platforms, the appearance and the website functions are working normally on all this devices:
 
-As of Feb 14, 2022 CI students can take advantage of the Student Developer Pack where you have access to great things
-like [browserstack](https://education.github.com/pack/offers/#browserstack) You should have received an email about how
-to activate your student Developer Pack, here's
-a [slack](https://code-institute-room.slack.com/archives/C0L316Z96/p1644946870567999) with details if you can't find it
-in the associated thread.
+| Tool/Device    | Browser | OS            | Viewport       |
+|----------------|---------|---------------|----------------|
+| Iphone 14 Plus | Safari  | V16.0         | 1284 x 2778 px |
+| Iphone 13      | Safari  | V16.3         |  390 x 664 px  |
+| Iphone 12      | Safari  | V14.1         |  390 x 664 px  |
+| Moto G9 v10.0  | Firefox | Android,v10.0 |  390 x 664 px  |
+| OnePlus        | Chrome  | v9.0          |  412 x 757 px  |
+| Samsung Galaxy | Firefox | v12.0         |  384 x 702 px  |
+| Google Pixel   | Chrome  | v13.0         |  412 x 796 px  |
+| Ipad Pro       | Safari  | v16.2         | 1024 x 1292 px |
+| Windows PC     | Edge    | Windowns 11   | 1336 x 667 px  |
+| Mac PC         | Safari  | Safari 15.6   | 1336 x 667 px  |
+| Windows PC     | Chrome  | Chrome        | 1336 x 667 px  |
 
-Start with a brief explanation of why you chose the mixture you did. The point is to prove that you looked at the site
-across various browsers, operating systems, and viewport breakpoints. You can add a column about the spot checking path
-you took or write it out here:
+> **Most Popular browser & Operating System:**
 
-1. Visit https://gs.statcounter.com/browser-market-share to figure out the most popular browsers & operating system combos seen across the we for the geographic region, and platoform(s) and screen sizes you expect your users to belong to. 
+| Browser         | Market Share (%) | Operating System | Market Share (%) |
+|-----------------|------------------|------------------|------------------|
+| Google Chrome   | 63.81            | Windows          | 70.89            |
+| Apple Safari    | 18.85            | macOS            | 18.83            |
+| Microsoft Edge  | 3.57             | iOS              | 10.82            |
+| Mozilla Firefox | 3.16             | Android          | 0.71             |
+| Samsung Internet| 2.71             | Linux            | 1.71             |
+| Other           | 7.90             | Other            | 1.04             |
 
-1. Include a sentence about why you chose the combinations you did.
-
-1. Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints.
-
-1. if you can't find the brower/device/OS combinations you want on Browserstack with your github student webpack (or you didn't activate that in time), note what you'd ideally test on then what you ended up testing on as a compromise. 
-
-> **Example:**
-> To ensure the code was functional and looked good on varoius devices I tested a couple of generic flows though my site on using the following Tool/Device combinations. The device/browser/and OS combinations were used based on reports found at [browser market share](https://gs.statcounter.com/browser-market-share) taken on MM/DD/YYYY:
->
-> | TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
-> |-------------------------------|-------------|------------|---------------|
-> | real phone: motog6            | chrome      | android    | XS 360 x 640  |
-> | browser stack: iPhone5s       | safari      | iOs        | XS 320 x 568  |
-> | dev tools emulator: pixel 2   | firefox     | android    | SM 411 x 731  |
-> | browserstack: iPhone 10x      | Chrome      | iOs        | SM 375 x 812  |
-> | browserstack: nexus 7 - vert  | Chrome      | android    | M 600 x 960   |
-> | real tablet: ipad mini - vert | safari      | iOs        | M 768 x 1024  |
-> | browserstack: nexus 7 - horiz | firefox     | android    | LG 960 x 600  |
-> | chrome emulator: ipad - horiz | safari      | iOs        | LG 1024 x 768 |
-> | browserstack                  | Chrome      | windows    | XL 1920 x 946 |
-> | real computer: mac book pro   | safari 12.1 | Mohave     | XL 1400 x 766 |
-> | browserstack                  | IE Edge 88  | windows 10 | XL 1920 x 964 |
->
-> Here is a link to the [test case](https://github.com/maliahavlicek/ci_mentor_insights/issues/9).
-
-Note, you might find it easier to create a test case for each tool/device and link to the test case in the table here.
-
+The selections in the table have been determined using statistics from (gs.statcounter.com)[https://gs.statcounter.com/], which reflects the distribution of web browser usage among users. Given that Chrome and Safari hold the largest market shares, they were prioritized for thorough testing across various devices and operating systems. Microsoft Edge, with a substantial user base, was also included for comprehensive assessment. Considering the relatively smaller market shares of Firefox, Samsung Internet, and Opera, they have been grouped together under the "Other" category. 
 ## Accessibility Testing
 🚨**Required**
 
