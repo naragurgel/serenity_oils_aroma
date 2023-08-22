@@ -110,6 +110,8 @@ I'm the onwer of the project so I only did one interaction on the progress board
 
 - [Interactions](https://github.com/users/naragurgel/projects/7)
 
+ADD IMAGE
+
 ## Feasibility vs Importance
 
 | Opportunity/Feature                         | Feasibility/Viability | Importance Level | In Or Out |
@@ -337,60 +339,68 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 ## Implemented Features
 
 **Navigation:**
+The navigation feature on the Serenity Oils website is intuitive and user-friendly, providing access to essential features and content. The navigation bar remains fixed at the top of the page, ensuring swift navigation even as you explore further down. On mobile devices, we employ a standard 'burger' menu, guaranteeing a seamless and uniform experience for users accessing the site on smaller screens. 
 
 - Desktop
-![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/4e9e61e4-4d5e-4fe4-9c54-9a9c751e8581)
 
 - Tablet
   
 - Mobile
 
 **Sign in/ Sign up:**
+The Serenity Oils website provides an easy way for sign-in and sign-up procedure, placing convenience and accessibility at the forefront of the user experience. The sign-in page not only offers straightforward sign-in options but also features a convenient "Forgot Password" link, enabling users to easily reset their password without any undue complexities.
+For new users register with us, the sign-in page prominently directs them to the sign-up process, making the transition smooth and hassle-free. On the sign-up page, users can create their accounts, while we ensure clarity by providing clear error messages if their chosen username or email is already registered in our system. The site designs ensures that accessing the platform is intuitive and efficient at every step.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e38ab59a-877c-4db2-b414-9e690104f296)
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d02c963e-4cc0-4158-a5d0-39a89a7f39d3)
 
-**Products Page:**
+**Products Page and Product Detail:**
+The Products Page is designed to make shopping easy. There is a "Quick Buy" buttons below each product on the list page. This means you can grab what you want without needing to go through a bunch of extra steps. Plus, the page ensure that the customer will have all the info needed to choose wisely. They'll find the product's name, price, rating, and category all laid out clearly. And for more details, it's just one click to the product's detail page for the full scoop.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7eededa5-a36d-4db0-b9a1-51e35319d759)
-
-**Product Detail**
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/15ba4aa2-6538-4492-abdf-13fcfd988588)
 
 **Bag & Checkout:**
+The Bag & Checkout feature, designed to make the user's shopping experience effortless and efficient. When they're on the bag page, it's the hub for managing all chosen items. Every product is showcased with its image, name, price, and SKU, giving a clear picture of what was picked. And to give the ultimate control, there is a quantity button for adjusting amounts or removing items. It's all about ensuring that the order is exactly how the user want it.
+The check out feature is simple and secure, so you can easy go through the process. The user-friendly form collects all the essential details, like the shipping info and payment card data. Plus, there's an order summary right there, allowing the user to review all choices before finalize the purchase.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a9876c1a-e19f-4c94-b845-fcc5267b816a)
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/9246dfb9-7c19-415b-b709-15994595c871)
 
 **Profile**
+The Profile feature, gives a personalized space to oversee the user's account and monitor the order history. It is on the top of the page on "My Profile", the user can check and adjust the default delivery information. It's a handy way to keep your shipping details updated, so the user will be all set during the checkout phase. The user can find the 'Order History' section where they will have all past orders, neatly organized by order number. With just a simple click on that number, they can go back into the specifics of your earlier purchases. Whether it's for reordering or tracking.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/79d42d38-7ff4-4abe-a47d-d6d74df41549)
 
 **Blog**
+The Blog feature has informative articles, covering everything from wellness tips to aromathepary benefits. It's a hub designed to cater to interests and needs, providing a variety of content that empowers the user's on the journey. When the user click on a post title, they're taken to a post detail view. Here, they can immerse on the post's entirety, engaging with the content on a deeper level. They can even show appreciation by giving it a like or add the post the the 'Favorit List' by clicking on "Add to Favorites" button. When the user wants to read those favorite posts again, they can easily find it on the 'My Favorits Post' list.  When they open the list they are able to remove any post from there.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ddf1fe08-9a08-4134-9fc5-3782b04de1a3)
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e1cd9ac9-f70e-4da6-866e-d0fbcb871431)
 
-**Favorites Post Blog**
+*Favorites Post Blog*
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/abee07bd-c23f-4306-8aae-d6dd6b92b834)
 
 **Contact Us**
+The Contact Us page is the direct line with the admin. Whether the user wants to share feedback, inquire about products, or seek support, this is the place to do it. Fill out the simple form, and the management team wiill get back to you as soon as possible.
 
 **Testimonials**
+The Testimonials page discover what others have to say about their experience with Serenity Oils. Testimonials page is a collection of feedback from the valued customers. Read about how the products have made a positive impact on their well-being and lifestyle. These testimonials offer genuine insights into the benefits of our offerings and the satisfaction of the customers. 
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/56758542-4fef-4d4a-8269-2030f8178c8a)
 
 **Footer**
+The footer of the Serenity Oils website provides direct links to our social media platforms, ensuring the user can stay connected and updated. To enhance accessibility,it's included an "aria-label" attribute for improved user experience, making it easier to understand the purpose of different elements. If the user is interested in receiving the newsletter, signing up is simple – just enter the email address and stay informed about latest updates and offerings.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ada0fb18-4468-44a9-801a-819e00913fbb)
 
 **Messages Notifications:**
-
+There is messages notifications for each important action taken.
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ab92b8a0-e0f5-4482-977a-11af7d785450)
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ca366b65-d6e1-4be5-8905-7613bfa97b9b)
@@ -400,11 +410,13 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/be5f9f4e-20af-4f2f-a4c2-0c9fe085883f)
 
 **Admin Permissions:**
-
+- Edit and delete products
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3db988ba-e1a5-4138-87de-3867c094d09e)
 
+- Add new products
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/1136eaaa-5423-4148-af3e-858d7931efd3)
 
+-Delete Testimonial
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/5b97ba22-995f-415a-8db3-63248db543a4)
 
 
