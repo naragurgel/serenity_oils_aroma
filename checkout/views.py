@@ -171,7 +171,7 @@ def checkout_success(request, order_number):
                 settings.DEFAULT_FROM_EMAIL,
                 [order.email]
             )
-            return render(request, 'checkout/success_email.html', context)
+            return render(request, 'checkout/success_email.html')
     elif order.user_profile.user != request.user:
         return HttpResponseRedirect(reverse('errors/403.html'))
     
