@@ -20,16 +20,16 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <p>
+            <p class="text-center">
                 Code expired, please type your email address and confirm to receive a new email with an access link.
             </p>
-            <div class="col">
-                <form action="{% url 'checkout_confirm_email' order_number %}" method="POST">
-                    {% csrf_token %}
-                    {{ form.email | as_crispy_field }}
-                    <button class="btn btn-black border-black" type="submit">Submit</button>
-                </form>
-            </div>
+        </div>
+        <div class="col">
+            <form action="{% url 'checkout_confirm_email' order_number %}" method="POST">
+                {% csrf_token %}
+                {{ form.email | as_crispy_field }}
+                <button class="btn btn-black border-black" type="submit">Submit</button>
+            </form>
         </div>
         <div class="row">
 			<div class="col-12 col-lg-7 text-right">

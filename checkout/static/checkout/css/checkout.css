@@ -69,3 +69,10 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+/* Breakpoint: 992px Large screens */
+@media (min-width: 992px) {
+    .container {
+        margin-top: 2rem !important;
+    }
+}
