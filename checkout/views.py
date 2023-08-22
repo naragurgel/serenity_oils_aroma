@@ -173,9 +173,9 @@ def checkout_success(request, order_number):
             data = signing.loads(token, max_age=900)
             email = data.get("email")
             if not email:
-                return redirect("/") # TODO: show error saying email is inexistent
+                return redirect("checkout/error_email.html")
             if email != order_email:
-                return HttpResponse('Unauthorized', status=401) # send 401
+                return HttpResponseRedirect(reverse('errors/403.html'))
         else:
             token = signing.dumps({'email': order.email})
             checkout_success_link = reverse('checkout_success',
@@ -198,10 +198,10 @@ def checkout_success(request, order_number):
                 settings.DEFAULT_FROM_EMAIL,
                 [order_email]
             )
-            return HttpResponse('Unauthorizeddddd', status=401) # TODO: show page saying email was sent (render)
+            return render(request, 'checkout/success_email.html', context)
 
     elif order.user_profile.user != request.user:
-         return HttpResponse('Unauthorized', status=401) # TODO: make correct unauth call
+        return HttpResponseRedirect(reverse('errors/403.html'))
     
     if not order.email_sent:
         email_to = order.email
