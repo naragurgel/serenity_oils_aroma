@@ -24,7 +24,7 @@
                 Code expired, please type your email address and confirm to receive a new email with an access link.
             </p>
             <div class="col">
-                <form action="{% url 'checkout_confirm_email' %}" method="POST">
+                <form action="{% url 'checkout_confirm_email' order_number %}" method="POST">
                     {% csrf_token %}
                     {{ form.email | as_crispy_field }}
                     <button class="btn btn-black border-black" type="submit">Submit</button>

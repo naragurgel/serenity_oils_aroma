@@ -1,6 +1,7 @@
 from django.shortcuts import (
-    render, redirect, reverse, get_object_or_404, HttpResponse
+    render, redirect, reverse, get_object_or_404, HttpResponse, HttpResponseRedirect
 )
+from django.http import Http404
 from django.core import signing
 from django.core.mail import send_mail
 from django.utils.http import urlencode
@@ -156,7 +157,7 @@ def checkout_success(request, order_number):
                 return HttpResponseRedirect(reverse('errors/403.html'))
         except (signing.BadSignature, signing.SignatureExpired) as error:
             form = EmailForm()
-            return render(request, 'checkout/email_form.html', {'form': form})
+            return render(request, 'checkout/email_form.html', {'form': form, 'order_number': order_number})
     elif order.user_profile.user != request.user:
         return HttpResponseRedirect(reverse('errors/403.html'))
     
@@ -193,9 +194,11 @@ def checkout_success(request, order_number):
 @require_POST
 def checkout_confirm_email(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
+    form = EmailForm(request.POST, instance=order)
 
-    if order.email != request.POST.get('email'):
-        return HttpResponseRedirect(reverse('errors/403.html'))
+    if not form.is_valid():
+        return render(request, 'checkout/email_form.html', {'form': form, 'order_number': order_number})
+
 
     subject = render_to_string(
         'checkout/magic_link/magic_link_email_subject.txt',
