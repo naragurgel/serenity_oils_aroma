@@ -143,19 +143,18 @@ def checkout_success(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     if not order.user_profile:
-        order_email = order.email
-        token = request.GET.get("token")
 
         # if token exists we check to see if the email is the same from order
-        if token:
+        try: 
             # Max age of 15 minutes
+            token = request.GET.get("token")
             data = signing.loads(token, max_age=900)
             email = data.get("email")
             if not email:
                 return redirect("checkout/error_email.html")
-            if email != order_email:
+            if email != order.email:
                 return HttpResponseRedirect(reverse('errors/403.html'))
-        else:
+        except (signing.BadSignature, signing.SignatureExpired) as error:
             subject = render_to_string(
                 'checkout/magic_link/magic_link_email_subject.txt',
                 {'order': order})
@@ -165,15 +164,14 @@ def checkout_success(request, order_number):
                     'link': generate_tokenized_link(order, request),
                     'order': order,
                     'contact_email': settings.DEFAULT_FROM_EMAIL
-                 })
+                })
             send_mail(
                 subject,
                 body,
                 settings.DEFAULT_FROM_EMAIL,
-                [order_email]
+                [order.email]
             )
             return render(request, 'checkout/success_email.html', context)
-
     elif order.user_profile.user != request.user:
         return HttpResponseRedirect(reverse('errors/403.html'))
     
