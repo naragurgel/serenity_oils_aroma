@@ -156,7 +156,7 @@ def checkout_success(request, order_number):
                 return HttpResponseRedirect(reverse('errors/403.html'))
         except (signing.BadSignature, signing.SignatureExpired) as error:
             form = EmailForm()
-            return render(request, 'checkout/email_form.html', {'form', form})
+            return render(request, 'checkout/email_form.html', {'form': form})
     elif order.user_profile.user != request.user:
         return HttpResponseRedirect(reverse('errors/403.html'))
     
