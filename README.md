@@ -108,7 +108,7 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 
 I'm the onwer of the project so I only did one interaction on the progress board.
 
-- **[Interactions]**(https://github.com/users/naragurgel/projects/7)
+- [Interactions](https://github.com/users/naragurgel/projects/7)
 
 ## Feasibility vs Importance
 
@@ -165,7 +165,7 @@ The reduced scope approach allows for a quicker and more focused website launch,
 - I selected the 'Lato' font-family for the Serenity Oils website due to its excellent legibility and modern appearance. With a clean and professional aesthetic, 'Lato' ensures a pleasant reading experience for users while maintaining compatibility across various devices and browsers. Its versatile nature also allows for consistent use in both headings and body text, contributing to the site's overall cohesive and contemporary design, which complements the soothing and natural theme of aromatherapy products.
 
 ### Images
-HERE
+- The choice of the hero image with an oil bottle in conjunction with the specified color palette is deliberate and aligned with the desired visual and emotional impact of the Serenity Oils website. The color palette, consisting of warm browns, beige, soft grays, and a white background, was meticulously selected to evoke a sense of naturalness, tranquility, and authenticity that resonate with the essence of aromatherapy.
 
 ### Design Elements
 
@@ -186,6 +186,7 @@ HERE
 > - icons
 > - tabbed content
 > - Forms
+> - magic link verification
 
 ### Frameworks
 
