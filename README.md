@@ -342,10 +342,13 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 The navigation feature on the Serenity Oils website is intuitive and user-friendly, providing access to essential features and content. The navigation bar remains fixed at the top of the page, ensuring swift navigation even as you explore further down. On mobile devices, we employ a standard 'burger' menu, guaranteeing a seamless and uniform experience for users accessing the site on smaller screens. 
 
 - Desktop
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b9f3d693-32af-4633-b409-5c17f1b70d0b)
 
 - Tablet
-  
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7fd43b2d-f432-4ef4-89e7-a040b5eb3f66)
+
 - Mobile
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/81faf5da-395b-44f0-9bd0-feb4ae9a35d3)
 
 **Sign in/ Sign up:**
 The Serenity Oils website provides an easy way for sign-in and sign-up procedure, placing convenience and accessibility at the forefront of the user experience. The sign-in page not only offers straightforward sign-in options but also features a convenient "Forgot Password" link, enabling users to easily reset their password without any undue complexities.
@@ -388,6 +391,8 @@ The Blog feature has informative articles, covering everything from wellness tip
 
 **Contact Us**
 The Contact Us page is the direct line with the admin. Whether the user wants to share feedback, inquire about products, or seek support, this is the place to do it. Fill out the simple form, and the management team wiill get back to you as soon as possible.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d291f859-bef8-4a6b-b333-8a6a189840b7)
 
 **Testimonials**
 The Testimonials page discover what others have to say about their experience with Serenity Oils. Testimonials page is a collection of feedback from the valued customers. Read about how the products have made a positive impact on their well-being and lifestyle. These testimonials offer genuine insights into the benefits of our offerings and the satisfaction of the customers. 
@@ -582,14 +587,16 @@ and ensure they have a comment in them.
 In this section discuss your business model, how you use  SEO to get users to your site and how you hope to generate more traffic and get sponsors to back link to your site. 
 
 ## Facebook Business Page
+![Facebook](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3ac96776-2442-457e-915b-4df79c3311d9)
 
+![feed](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/34f82a10-74db-459b-83f2-6f0d681a9cb3)
 
 - The Serenity Oils Facebook Page is a dynamic space for connecting directly with our audience. To ensure that the followers are well-informed about product releases, restocks, and exciting upcoming collections.
 - The page deliver educational content that enriches the followers' knowledge about our products and the industry, solidifying our brand's expertise.
 - The Facebook page acts as a valuable feedback channel, allowing us to gather insights into our customers' preferences and concerns.
 
 ## Newsletter Signup
-
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/0227eed4-0672-411a-a5a0-2f8386af6991)
 
 - The Newsletter Signup function on our Serenity Oils website enables us to extend our connection beyond our current customer base, reaching a broader audience. Those who subscribe to the newsletter exhibit a distinct interest in for the brand. This offers a direct and channel of communication, positioning it as a valuable tool for upcoming marketing endeavors.
 
