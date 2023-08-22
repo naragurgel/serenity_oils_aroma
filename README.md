@@ -564,9 +564,6 @@ I put together on how to do this.
 is what my custom tempalte looks like in the UX
 ![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
 
-
-
-
 ## Defects of Note
 🚀 **merit & beyhond**
 
@@ -585,23 +582,18 @@ and ensure they have a comment in them.
 In this section discuss your business model, how you use  SEO to get users to your site and how you hope to generate more traffic and get sponsors to back link to your site. 
 
 ## Facebook Business Page
-🚨**Required**
 
-- copy a screenshot of the FB page
-- add a couple of bulletpoints about the goals of what this fills for building out followers & special content
+
+- The Serenity Oils Facebook Page is a dynamic space for connecting directly with our audience. To ensure that the followers are well-informed about product releases, restocks, and exciting upcoming collections.
+- The page deliver educational content that enriches the followers' knowledge about our products and the industry, solidifying our brand's expertise.
+- The Facebook page acts as a valuable feedback channel, allowing us to gather insights into our customers' preferences and concerns.
 
 ## Newsletter Signup
-🚨**Required**
 
-- copy a screenshot of the signup 
-- add a couple of bullet oints outlining the goals of what this functionality provides for building out followers
 
-## Links
-- sponsored links are flagged with rel="sponsored"
-- social links and other links that go outside domain have `rel="nofollower"` to signal to search engines that those links are not associated with our specific domain
+- The Newsletter Signup function on our Serenity Oils website enables us to extend our connection beyond our current customer base, reaching a broader audience. Those who subscribe to the newsletter exhibit a distinct interest in for the brand. This offers a direct and channel of communication, positioning it as a valuable tool for upcoming marketing endeavors.
 
 ## SEO Strategy
-🚨**Required**
 
 In this section write out the process you used to come up with short tailed and long tailed results to help refine the keywords you came up with. You should call out attention to the following:
 
