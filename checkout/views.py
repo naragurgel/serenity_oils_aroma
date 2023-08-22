@@ -48,18 +48,7 @@ def checkout(request):
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
-
-        form_data = {
-            'full_name': request.POST['full_name'],
-            'email': request.POST['email'],
-            'phone_number': request.POST['phone_number'],
-            'country': request.POST['country'],
-            'postcode': request.POST['postcode'],
-            'town_or_city': request.POST['town_or_city'],
-            'street_address1': request.POST['street_address1'],
-            'street_address2': request.POST['street_address2'],
-        }
-        order_form = OrderForm(form_data)
+        order_form = OrderForm(request.POST)
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
@@ -90,22 +79,13 @@ def checkout(request):
                 order.save()
 
                 # Save the user's info
-                if save_info:
-                    profile_data = {
-                        'default_phone_number': order.phone_number,
-                        'default_country': order.country,
-                        'default_postcode': order.postcode,
-                        'default_town_or_city': order.town_or_city,
-                        'default_street_address1': order.street_address1,
-                        'default_street_address2': order.street_address2,
-                        'default_county': order.county,
-                    }
-                    user_profile_form = UserProfileForm(profile_data, instance=profile)
+                if 'save-info' in request.POST:
+                    user_profile_form = UserProfileForm({f'default_{k}': v for k,v in order.items()}, instance=profile)
                     if user_profile_form.is_valid():
                         user_profile_form.save()
-
-            request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))  # noqa
+            if request.user.is_authenticated:
+                return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(generate_tokenized_link(order, request))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -160,7 +140,6 @@ def checkout_success(request, order_number):
     """
     View to handle the chackout_success process
     """
-    save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
     if not order.user_profile:
@@ -177,18 +156,13 @@ def checkout_success(request, order_number):
             if email != order_email:
                 return HttpResponseRedirect(reverse('errors/403.html'))
         else:
-            token = signing.dumps({'email': order.email})
-            checkout_success_link = reverse('checkout_success',
-            kwargs={'order_number': order_number}
-            )
-            access_link = f'{checkout_success_link}?{urlencode({"token": token})}'
             subject = render_to_string(
                 'checkout/magic_link/magic_link_email_subject.txt',
                 {'order': order})
             body = render_to_string(
                 'checkout/magic_link/magic_link_email_body.txt',
                 {
-                    'link': request.build_absolute_uri(access_link),
+                    'link': generate_tokenized_link(order, request),
                     'order': order,
                     'contact_email': settings.DEFAULT_FROM_EMAIL
                  })
@@ -207,12 +181,13 @@ def checkout_success(request, order_number):
         email_to = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
-            {'order': order})
+            {'order': order}
+            )
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        recipient_list = [request.user.email, ]
-        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list)  # noqa
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}
+            )
+        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [email_to])  # noqa
 
         messages.success(request, f'Order successfully processed! \
             Your order number is {order_number}. A confirmation \
@@ -230,3 +205,13 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def generate_tokenized_link(order, request):
+    token = signing.dumps({'email': order.email})
+    checkout_success_link = reverse('checkout_success',
+                                    kwargs={
+                                        'order_number': order.order_number}
+                                    )
+    access_link = f'{checkout_success_link}?{urlencode({"token": token})}'
+    return request.build_absolute_uri(access_link)
