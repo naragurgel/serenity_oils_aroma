@@ -624,119 +624,292 @@ In this section discuss your business model, how you use  SEO to get users to yo
 
 ## SEO Strategy
 
-In this section write out the process you used to come up with short tailed and long tailed results to help refine the keywords you came up with. You should call out attention to the following:
-
+The approach to SEO for the Serenity Oils website is all about making sure people can easily find the page when they're looking for the types of products we offer. It was done carefully choosing words that match what people might type into a search engine, like "essential oils" or "aromatherapy." 
 ### Keywords
-Describe the process you went through identifiying keywords that you want Google and other search engines to relate to your site.
+
+The words are connected to essential oils and natural wellness for our site's SEO. We search to see which words people search for the most and looked at what competitors use. Then, I added these words in the website's content and tags to make sure search engines can find it.
+<strong>Keywords: </strong> "essential oils, aromatherapy, natural wellness, relaxation, stress healing, wellness products, self-care, wellness rituals, diffuser oils, oils, aromatherapy benefits, natural oils, organic essential oils, therapeutic grade oils, natural solutions, alternative medicine oils, alternative therapy, high-quality essential oils"
 
 ### Description
-Note that you have a the meat description tag and if any of the content changes based on the page.
+
+The description talks about the products supplied: "Serenity Oils is a leading reseller in Essential Oils. We offer pure oils for your natural lifestyle. Authentic essential oils for every household. "
 
 ### Title
-Call out that you have this set in your base.html so it can be changed per page
+
+The website's main template, base.html, includes the title tag functionality. This enables us to create unique titles for every page, which is a dynamic strategy contributing to our SEO optimization.
 
 ### Relevant Content
-Call out how you purposefully incorporated keywords into your content, H1, meta data etc. 
+
+I've intentionally incorporated the keywords we've chosen into different parts of our content such as headings, meta descriptions, product names, and descriptions, blog posts. This careful integration serves a dual purpose: it helps our content rank well on search engines while also delivering meaningful and useful information to our site visitors.
 
 ### Sitemap
-🚨**Required**
 
-- [sitemap.xml file]() call out files that exist so browsers can easily crawl site
+I've made a map for the website so that search engines like Google can easily find and understand what's on our site. This helps our website show up better in search results.
+
+- [sitemap.xml file](https://github.com/naragurgel/serenity_oils_aroma/blob/main/sitemap.xml) 
 
 ### Robots.txt
-🚨**Required**
 
-- [robots.txt file]() to restrict pages that are should be searched by google, authentication and others are blocked to only allow relevant pages to be searched by google
+I've set up our website so that Google only looks at the important pages by blocking certain pages like authentication and others from being included in search results. This helps Google show the right information to people searching for our website.
+
+- [robots.txt file](https://github.com/naragurgel/serenity_oils_aroma/blob/main/robots.txt)
 
 # Deployment
-🚨**Required** 
-
 ## Prerequisits
-🚀 **merit & beyond**
+To run this project, you need a ElephantSQL & AWS Amazon account:
 
-If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information. ex)
+**ElephantSQL Set Up Account:**
+1. Start by visiting the ElephantSQL website at https://www.elephantsql.com/.
+2. If you don't have an account, create one by signing up.
+3. Once you're signed in, you'll be taken to the ElephantSQL dashboard.
+4. Click on "Create New Instance" to make a new PostgreSQL database instance.
+5. Choose a plan that fits your needs.
+6. Configure the database settings, such as region and database name.
+7. Click the "Create" button to set up the database instance.
+8. Once the instance is created, you'll see the database details, including hostname, port, username, and password.
+**Retrieve the Database URL:**
+1. In the ElephantSQL dashboard, find your new database instance.
+2. Click on the instance to see its details.
+3. Under the "Details" tab, you'll find the connection details, including the URL.
+**Set Environmental Variables:**
+1. Under the "Details" tab, you'll find the connection details, including the URL.
+2. How you set environmental variables depends on your operating system and development environment.
+3. Typically, you'll add a line like DATABASE_URL=<YOUR_DATABASE_URL> to your 'env.py' file or the environment configuration.
+4. Replace "<YOUR_DATABASE_URL>" with the actual URL you got from ElephantSQL.
 
-1. **Gmail Account:** In order to have verification and forgot password emails sent to registered users you need a
-   google account. 
-  - [create a gmail accoount](https://accounts.google.com/signup) 
-  - [downgrade to less secure](https://myaccount.google.com/lesssecureapps?pli=1) after you are signed into the gmail account, downgrade to less secure
-2. **Couldinary URL**
-  - [create an account](https://cloudinary.com/)
-  - go to the dashboard and copy your API environmental variable
-   
-    <img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png">     
+<hr>
+
+**AWS Amazon Set Up Account/ AWS S3 Bucket:**
+1. Begin by creating an account on AWS Amazon if you don't have one.
+2. Log in to your account and use the search bar to find 'S3'.
+3. On the S3 page, click on "Create Bucket".
+4. Choose a suitable name for your bucket (matching your Heroku app name is a good idea) and select the region that's closest to you
+5. Uncheck "Block Public Access" and acknowledge that the bucket will be public. Hit "Create Bucket".
+6. Inside the bucket, go to the "Properties" tab. Under "Static Website Hosting", click "Edit", turn on "Static Website Hosting", and use the default values for index and error documents. Click "Save".
+7. Choose "ACLs enabled" under "Object Ownership".
+8. Now, on the "Permissions" tab, insert the following into the Cross-origin resource sharing (CORS) section:
+  ```
+    [
+        {
+            "AllowedHeaders": [
+            "Authorization"
+            ],
+            "AllowedMethods": [
+            "GET"
+            ],
+            "AllowedOrigins": [
+            "*"
+            ],
+            "ExposeHeaders": []
+        }
+    ]
+  ```
+9. Proceed to the "Bucket Policy" section. Click "Edit" and then select "Policy Generator".
+10. From the dropdown menu labeled "Select Type of Policy," choose "S3 Bucket Policy". In the "Principal" section, type "*" to allow access to all principals. Under "Actions", pick "GetObject".
+11. Copy the "ARN" (Amazon Resource Name) from the previous tab.
+12. Return to the AWS policy generator and paste the ARN into the "Amazon Resource Name (ARN)" field at the bottom. Click "Add Statement", followed by "Generate Policy".
+13. Copy the generated policy and paste it into the "Bucket Policy Editor".
+14. Before saving, append /* at the end of your "Resource Key". This ensures access to all resources within the bucket.
+15. Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
+16. Beside "Everyone (public access)", tick the "list" checkbox and save your changes.
+
+**Identify and Access Management (IAM) Set Up**
+1. Locate "IAM" in the AWS navigation bar and click on it.
+2. On the sidebar, choose "User Groups" and then select "Create group". Name this group "manage-your-project-name".
+3. Proceed to "Policies" and click "Create Policy". There's a button for the next page, which adds optional tags (you need to click it to reach the policy review page).
+4. Move to the JSON section and click "Import Managed Policy". Here, search for "S3" and pick "AmazonS3FullAccess", followed by "Import".
+5. Follow the exemplo bellow:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": [
+                "YOUR-ARN-NO-HERE",
+                "YOUR-ARN-NO-HERE/*"
+            ]
+        }
+    ]
+}
+
+```
+6. Make sure to provide a name and brief description for the policy, then click "Create Policy".
+7. Navigate to "User Groups". Choose your designated group.
+8. Access the "permissions" tab, expand the "Add permissions" menu, and choose "Attach policies".
+9. Select the policy and click "Add permissions" at the bottom.
+
+**Retrieve access keys**
+1. Access IAM and choose 'Users'.
+2. Pick the specific user you want to generate a CSV file for.
+3. Navigate to the 'Security Credentials' tab.
+4. Scroll down to 'Access Keys' and hit 'Create access key'.
+5. Opt for 'Application running outside AWS', then proceed to the next step.
+6. In the following window, you can keep the 'Description tag value' empty. Click 'Create Access Key'.
+7. Finally, click the 'Download .csv file' button to save the file.
+
+**Connecting AWS to the Project**
+1. Within your terminal install the following packages:
+
+```
+  pip3 install boto3
+  pip3 install django-storages
+```
+
+2. Freeze the requiremenst by typing:
+
+```
+  pip3 freeze > requirements.txt
+```
+3. Add "storages" to your installed apps within your settings.py file.
+4. At the bottom of the settings.py file add the following code.
+```
+if 'USE_AWS' in os.environ:
+   # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+  # Bucket Config
+  AWS_STORAGE_BUCKET_NAME = 'bucket-name'
+  AWS_S3_REGION_NAME = 'region-name'
+  AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+  AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+  AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+5. Add the following keys in you Heroku app config Vars: 'AWS_ACCESS_KEY_ID' & 'AWS_SECRET_ACCESS_KEY'. This can be found in your CSV file.
+6. Add the key "USE_AWS", and set to True in your Heroku app.
+7. Remove the "DISABLE_COLLECSTATIC" variable from Heroku.
+8. Inside the settings.py file, add the following code into your Bucket config if statement:
+```
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+9. In your root directory create a file called "custom_storages.py". Add the followinfg code:
+```
+  from django.conf import settings
+  from storages.backends.s3boto3 import S3Boto3Storage
+  
+  
+  class StaticStorage(S3Boto3Storage):
+      location = settings.STATICFILES_LOCATION
+  
+  
+  class MediaStorage(S3Boto3Storage):
+      location = settings.MEDIAFILES_LOCATION
+```
+10. Return to your AWS S3 bucket and choose "Create Folder". Name this new folder as "Media".
+11. Within the "Media" folder, click "Upload > Add files" and proceed to select the images you intend to use on your site.
+12. In the "Permissions" section, opt for the "Grant public-read access" choice and then click "Upload".
+ 
  
 ## Fork and Clone the Repository
-🚀 **merit & beyond**
-To keep the main reposotory for this project clean, please fork the repostiory into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
-1. login to your own gitHub account
-2. navigate to [my repository](URL OF YOUR LIVE REPOSITORY)
-3. In the top right corner of the page, click fork 
+To make a copy or ‘fork’ the repository:
 
-![image](https://user-images.githubusercontent.com/23039742/213840378-e785eaa0-712b-468c-bcda-64fde56eae44.png)
+1. Sign in to your personal GitHub account.
+2. Navigate to [my repository](https://github.com/naragurgel/serenity_oils_aroma).
+3. At the upper-right corner of the page, locate the 'fork' option and click it to generate a duplicate of the original repository for your use.
 
-4. set yourself as the owner
-5. change the name of the repo if you want
-6. add a description if you want
-7. choose what to copy, typicall the main branch only
-8. click the snazy green button
-
-![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
-
-9. To get files to your local environment, you need to clone it: click the code button
-10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
-
-
+## Making a Local Clone
+1. Below the repository name, access the 'code' tab.
+2. Within the clone box, find the HTTPS tab, and click on the clipboard icon to copy the URL.
+3. In your IED open GitBash.
+4. Navigate to the desired location for the cloned directory using GitBash.
+5. Input 'git clone' followed by pasting the previously copied GitHub URL.
+6. Press the enter key to initiate the process, resulting in the creation of the local clone.
 
 ## Development Deployment 
-🚨**Required** 
+### Running From GitPod or your preferred IDE:
+To get started with local development in GitPod or your preferred IDE, follow these steps:
 
-This section should describe the process someone would have to go through to get the local working in GitPod, or your preferred IDE. Start from installing the chrome extension then clicking the green gitpod button in THEIR FORKED repository, the enumerate the steps to walk them through the process as if they were brand new to this proccess. **Include screenshots** where applicable.
+1. Install the GitPod Chrome extension from the Chrome Web Store.
+- [GitPod Chrome Extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki)
 
-**Key points to cover** 
-- Install required python packages: `pip3 install -r requirements.txt`
-- Create env.py
-- What to put in the env.py, don’t disclose real values
->  - EMAIL_HOST_PASSWORD=<YOUR_VALUE>
->  - DEFAULT_FROM_EMAIL=<YOUR_VALUE>
->  - EMAIL_USERNAME=<YOUR_VALUE>
->  - SECRET_KEY=<YOUR_VALUE>
->  - CLOUDINARY_URL=<YOUR_VALUE>
->  - DEV=True
-- Apply Database Migrations so the database starts up `python3 manage.py migrate`
-- Create a super user so you can add and inspect things via django admin  `python3 manage.py createsuperuser`
-- Preload data: Sometimes you might want to include steps to create data in the admin or preload a data dump [coderwall blog](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) has examples on how to dump data and load it which saves a bunch of time when deploying the application from a local database to a hosted database but you don’t  have to do this step
-- Start the server `python3 manage.py runserver`
-
+2. Once the extension is installed, navigate to your forked repository on GitHub.
+3. Click on the green "GitPod" button to open the repository in GitPod.
+4. After the workspace is created, you can start the development process.
+5. Install the Python packages by running the following command in the terminal:
+- **pip3 install -r requirements.txt**
+6. Create an **'env.py** file in the project's root directory to store your environment variables.
+7. In the **'env.py** file, add the following variables:
+```
+  DATABASE_URL=<YOUR_VALUE>
+  DEVELOPMENT=<YOUR_VALUE>
+  SECRET_KEY=<YOUR_VALUE>
+  AWS_ACCESS_KEY_ID=<YOUR_VALUE>
+  AWS_SECRET_ACCESS_KEY=<YOUR_VALUE>
+  EMAIL_HOST_PASS=<YOUR_VALUE>
+  EMAIL_HOST_USER=<YOUR_VALUE>
+```
+8. Apply databse migrations to set up the database by running the following command:
+```
+  python3 manage.py migrate
+```
+9. Create a superuser account that allows you add and inspect data via Django admin by running the following command:
+```
+  python3 manage.py createsuperuser
+```
+10. Start the server by running the following command:
+```
+  python3 manage.py runserver
+```
+11. Now you can access the application by opening the provided URL in your browser.
 
 ## Production Deployment
-🚨**Required** 
+To deploy your application on Heroku, follow the steps bellow:
 
-This section should describe the process you went through to deploy the project to a server where anyone can access the url without your machine running. This is typically Heroku. **Include screenshots** if you think they would make the process easier. Start with getting an heroku account and then setting up databases and other packages.
+1. **Create a Heroku Account:**
+- Visit the [Heroku](https://signup.heroku.com/login) website.
+- Sign up for a free account or log in if you already have one.
 
-If you have project settings required for Heroku, provide a table of the keys and values. Do not share your personal
-keys but either cut them out of the screenshot or say <YOUR_VALUE> and include links on how the user would obtain such
-values.
+2. **Create a New Heroku App:**
+- Once you are logged in to your Heroku account, click on the "New" button and select "Create new app".
+- Choose a unique name for your app. This name will be used in the App's URL.
+- Select the region closest to your location for better performance.
 
-**Key points to cover** 
-- cerating new app
-- setting app name
-- setting region
-- entering dreaded billing info
-- subscribing to a plan
-- setting up db
-- adding environmental values- have a list or table so user has less chance of typos
->  - EMAIL_HOST_PASSWORD
->  - DEFAULT_FROM_EMAIL
->  - EMAIL_USERNAME
->  - SECRET_KEY
->  - CLOUDINARY_URL
->  - COLLECT_STATIC
-- adding build packages
-- deploy
-- gitHub connection
-- auto vs manul deploy
-- monotior logs
+3. **Connect the App to Your Git Repository:**
+- After creating the app, go to the "Deploy" tab in your app's dashboard.
+- Choose the deployment method based on your Git repository: (e.g. GitHub).
+- Connect your app to the appropriate repository and branch.
+
+4. **Configure Environment Variables:**
+- In the "Settings" tab of your heroku app's dashboard, locate the "Config Vars" section.
+- Set the necessary enviroment variables required for your aplication: 
+  - e.g DATABASE_URL,
+  - AWS_ACCESS_KEY_ID,
+  - USE_AWS,
+  - EMAIL_HOST_PASS,
+  - EMAIL_HOST_USER,
+  - SECRET_KEY,
+  - USE_AWS,
+  - COLLECT_STATIC
+- Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables.
+
+5. **Deploy the Application:**
+- In the "Deploy" tab, scroll down to the "Manual Deploy" section.
+- Click on the "Deploy Branch" button to deploy your application.
+- Heroku will start building and deploying your application based on the code from your connected Git repository.
+
+6. **Monitor the Deployment:**
+- Once the deployment process is complete, you can view the deployment logs to ensure everything is working correctly.
+- In the "Activity" tab, you will find the deployment logs, which can help you identify any issues or errors that may have occured during the deployment process.
+
+7. **Access Your Deployed Application:**
+- After a successful deployment, you can access your application by visiting the URL provided in your Heroku app's dashboard.
+- Click on the "Open App" button or open the URL in a web browser to see your application live. 
 
 
 # Credits
