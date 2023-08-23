@@ -451,23 +451,28 @@ There is messages notifications for each important action taken.
 
 -400
 
-    ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a7e9c0cd-1cde-43e9-9e86-acf44f968437)
+    
 
 -403
 
-    ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/005a6d53-e65d-4906-a8a2-b31e6d34f044)
+    
 
 -500
 
-    ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/990dd1fc-ba97-4e5f-a46e-0107f78b46ec)
+
 
 # Future Features
 
 1- <strong>Interactive Aromatherapy Guides:</strong> Develop interactive guides that help users choose the right essential oils for their specific needs, providing personalized recommendations based on their preferences and goals.
+
 2- <strong>Subscription Services:</strong> Introduce subscription-based models for regular delivery of essential oils, candles, or diffusers, providing convenience and ensuring customers always have their favorite products on hand.
+
 3- <strong>Integration with Wellness Apps:</strong> Collaborate with wellness and meditation apps to integrate Serenity Oils' products and aromas into users' mindfulness routines.
+
 4- <strong>Virtual Aromatherapy Consultations:</strong> Offer virtual consultations with aromatherapy experts to provide personalized recommendations based on users' needs and preferences.
+
 5- <strong>Wishlist & Favorites:</strong> Enabling users to create a wishlist, where they can save products they're interested in for future consideration. 
+
 6- <strong>Customer Chat:</strong> Introducing a live chat support system to offer immediate assistance and address any questions users might have.
 
 # Testing
@@ -501,6 +506,7 @@ There is messages notifications for each important action taken.
 | Other           | 7.90             | Other            | 1.04             |
 
 The selections in the table have been determined using statistics from (gs.statcounter.com)[https://gs.statcounter.com/], which reflects the distribution of web browser usage among users. Given that Chrome and Safari hold the largest market shares, they were prioritized for thorough testing across various devices and operating systems. Microsoft Edge, with a substantial user base, was also included for comprehensive assessment. Considering the relatively smaller market shares of Firefox, Samsung Internet, and Opera, they have been grouped together under the "Other" category. 
+
 ## Accessibility Testing
 🚨**Required**
 
@@ -609,6 +615,7 @@ and ensure they have a comment in them.
 In this section discuss your business model, how you use  SEO to get users to your site and how you hope to generate more traffic and get sponsors to back link to your site. 
 
 ## Facebook Business Page
+
 ![Facebook](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3ac96776-2442-457e-915b-4df79c3311d9)
 
 ![feed](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/34f82a10-74db-459b-83f2-6f0d681a9cb3)
@@ -618,6 +625,7 @@ In this section discuss your business model, how you use  SEO to get users to yo
 - The Facebook page acts as a valuable feedback channel, allowing us to gather insights into our customers' preferences and concerns.
 
 ## Newsletter Signup
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/0227eed4-0672-411a-a5a0-2f8386af6991)
 
 - The Newsletter Signup function on our Serenity Oils website enables us to extend our connection beyond our current customer base, reaching a broader audience. Those who subscribe to the newsletter exhibit a distinct interest in for the brand. This offers a direct and channel of communication, positioning it as a valuable tool for upcoming marketing endeavors.
@@ -625,6 +633,7 @@ In this section discuss your business model, how you use  SEO to get users to yo
 ## SEO Strategy
 
 The approach to SEO for the Serenity Oils website is all about making sure people can easily find the page when they're looking for the types of products we offer. It was done carefully choosing words that match what people might type into a search engine, like "essential oils" or "aromatherapy." 
+
 ### Keywords
 
 The words are connected to essential oils and natural wellness for our site's SEO. We search to see which words people search for the most and looked at what competitors use. Then, I added these words in the website's content and tags to make sure search engines can find it.
@@ -656,6 +665,7 @@ I've set up our website so that Google only looks at the important pages by bloc
 
 # Deployment
 ## Prerequisits
+
 To run this project, you need a ElephantSQL & AWS Amazon account:
 
 **ElephantSQL Set Up Account:**
@@ -667,10 +677,12 @@ To run this project, you need a ElephantSQL & AWS Amazon account:
 6. Configure the database settings, such as region and database name.
 7. Click the "Create" button to set up the database instance.
 8. Once the instance is created, you'll see the database details, including hostname, port, username, and password.
+
 **Retrieve the Database URL:**
 1. In the ElephantSQL dashboard, find your new database instance.
 2. Click on the instance to see its details.
 3. Under the "Details" tab, you'll find the connection details, including the URL.
+
 **Set Environmental Variables:**
 1. Under the "Details" tab, you'll find the connection details, including the URL.
 2. How you set environmental variables depends on your operating system and development environment.
@@ -832,6 +844,7 @@ To make a copy or ‘fork’ the repository:
 6. Press the enter key to initiate the process, resulting in the creation of the local clone.
 
 ## Development Deployment 
+
 ### Running From GitPod or your preferred IDE:
 To get started with local development in GitPod or your preferred IDE, follow these steps:
 
