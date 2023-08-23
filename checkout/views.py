@@ -148,7 +148,7 @@ def checkout_success(request, order_number):
         # if token exists we check to see if the email is the same from order
         try: 
             # Max age of 15 minutes
-            token = request.GET.get("token")
+            token = request.GET.get("token", '')
             data = signing.loads(token, max_age=900)
             email = data.get("email")
             if not email:
