@@ -110,7 +110,7 @@ I'm the onwer of the project so I only did one interaction on the progress board
 
 - [Interactions](https://github.com/users/naragurgel/projects/7)
 
-ADD IMAGE
+![backlog1](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ff19fa4e-dbc5-4ddf-8508-c08fa61016ac)
 
 ## Feasibility vs Importance
 
@@ -242,7 +242,7 @@ HERE
 
 ## Entity Relationship Diagram
 
-CREATE
+Open it here: [output.pdf](https://github.com/naragurgel/serenity_oils_aroma/files/12420408/output.pdf)
 
 ## Database Choice
 For the Serenity Oils website, i've opted to utilize PostgreSQL as our database. This decision was made by the fact that our data exhibits a relational structure, and the use of PostgreSQL aligns with the hosting platform, Heroku. This choice not only facilitates smooth and cost-effective database management but also ensures the efficient handling of our website's data in a relational context.
