@@ -342,12 +342,15 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 The navigation feature on the Serenity Oils website is intuitive and user-friendly, providing access to essential features and content. The navigation bar remains fixed at the top of the page, ensuring swift navigation even as you explore further down. On mobile devices, we employ a standard 'burger' menu, guaranteeing a seamless and uniform experience for users accessing the site on smaller screens. 
 
 - Desktop
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b9f3d693-32af-4633-b409-5c17f1b70d0b)
 
 - Tablet
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7fd43b2d-f432-4ef4-89e7-a040b5eb3f66)
 
 - Mobile
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/81faf5da-395b-44f0-9bd0-feb4ae9a35d3)
 
 **Sign in/ Sign up:**
@@ -406,6 +409,7 @@ The footer of the Serenity Oils website provides direct links to our social medi
 
 **Messages Notifications:**
 There is messages notifications for each important action taken.
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ab92b8a0-e0f5-4482-977a-11af7d785450)
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ca366b65-d6e1-4be5-8905-7613bfa97b9b)
@@ -416,27 +420,34 @@ There is messages notifications for each important action taken.
 
 **Admin Permissions:**
 - Edit and delete products
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3db988ba-e1a5-4138-87de-3867c094d09e)
 
 - Add new products
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/1136eaaa-5423-4148-af3e-858d7931efd3)
 
 -Delete Testimonial
+
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/5b97ba22-995f-415a-8db3-63248db543a4)
 
 
 **Error 400/404/403/500**
 
 - 404
+
   ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7aa1d8c8-d3e2-410e-ace3-bc975ba6cd87)
 
 -400
+
     ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a7e9c0cd-1cde-43e9-9e86-acf44f968437)
 
 -403
+
     ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/005a6d53-e65d-4906-a8a2-b31e6d34f044)
 
 -500
+
     ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/990dd1fc-ba97-4e5f-a46e-0107f78b46ec)
 
 # Future Features
