@@ -17,4 +17,4 @@ assignees: ''
 
 # Expected Outcome
 
-[ ] -  Accessibility should be 90+
+- [ ]  Accessibility should be 90+
