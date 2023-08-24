@@ -193,6 +193,7 @@ def checkout_success(request, order_number):
 
 @require_POST
 def checkout_confirm_email(request, order_number):
+    """View to handle the confirmation email order"""
     order = get_object_or_404(Order, order_number=order_number)
     form = EmailForm(request.POST, instance=order)
 
@@ -220,6 +221,7 @@ def checkout_confirm_email(request, order_number):
 
 
 def generate_tokenized_link(order, request):
+    """View to generate the token for the magic link verification"""
     token = signing.dumps({'email': order.email})
     checkout_success_link = reverse('checkout_success',
                                     kwargs={

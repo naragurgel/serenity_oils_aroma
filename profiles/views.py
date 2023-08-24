@@ -35,6 +35,7 @@ def profile(request):
 
 @login_required
 def order_history(request, order_number):
+    """Display user's order history"""
     order = get_object_or_404(
         Order, order_number=order_number, user_profile__user=request.user)
     messages.info(request, (
