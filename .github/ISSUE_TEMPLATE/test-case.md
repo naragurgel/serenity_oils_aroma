@@ -18,9 +18,9 @@ https://serenity-oils-3beb26e98281.herokuapp.com/
 
 ## Steps to take
 1. Open the web browser.
-3. Enter the URL of the Serenity Oils  page ( ).
-4. Press Enter to navigate to the 
-5. Observe the loading time of the page. It should load within a reasonable time frame.
+2. Enter the URL of the Serenity Oils  page ( ).
+3. Press Enter to navigate to the 
+4. Observe the loading time of the page. It should load within a reasonable time frame.
 
 ##Expected Outcome
 - [ ] No console errors
