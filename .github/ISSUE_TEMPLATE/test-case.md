@@ -7,13 +7,19 @@ assignees: ''
 
 ---
 
-# Starting url
+## Starting url
 https://serenity-oils-3beb26e98281.herokuapp.com/
 
-# Steps to take
+**Objective:**
+
+**Preconditions:**
+
+## Steps to take
 1.
 2.
 3.
-#Expected Outcome
 
+##Expected Outcome
 - [ ] No console errors
+
+## Conclusion
