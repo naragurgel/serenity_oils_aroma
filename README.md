@@ -507,6 +507,17 @@ There is messages notifications for each important action taken.
 
 The selections in the table have been determined using statistics from (gs.statcounter.com)[https://gs.statcounter.com/], which reflects the distribution of web browser usage among users. Given that Chrome and Safari hold the largest market shares, they were prioritized for thorough testing across various devices and operating systems. Microsoft Edge, with a substantial user base, was also included for comprehensive assessment. Considering the relatively smaller market shares of Firefox, Samsung Internet, and Opera, they have been grouped together under the "Other" category. 
 
+## Manual Testing
+
+I've create manual testing and added to the test [backlog](https://github.com/users/naragurgel/projects/8).
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a6992f93-3baf-46db-9392-d98ac9d1f696)
+
+[Here](https://github.com/naragurgel/serenity_oils_aroma/issues?q=is%3Aissue+is%3Aopen+label%3ATEST_CASE) is the list with all tests created. They are labelled as TEST_CASE and each one has the steps I've taken during the process and the conclusion. 
+The template used was: 
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/58b08896-3996-4580-a3c9-36e0a9517172)
+
 ## Accessibility Testing
 🚨**Required**
 
