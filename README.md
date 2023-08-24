@@ -518,27 +518,60 @@ The template used was:
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/58b08896-3996-4580-a3c9-36e0a9517172)
 
+### Testing: 
+
+[Serenity Oils Homepage](https://github.com/naragurgel/serenity_oils_aroma/issues/35)
+
+[Registration Process](https://github.com/naragurgel/serenity_oils_aroma/issues/37)
+
+[Login](https://github.com/naragurgel/serenity_oils_aroma/issues/38)
+
+[Serenity Oils Products Page- Products Details](https://github.com/naragurgel/serenity_oils_aroma/issues/39)
+
+[Bag](https://github.com/naragurgel/serenity_oils_aroma/issues/40)
+
+[Checkout Page](https://github.com/naragurgel/serenity_oils_aroma/issues/41)
+
+[User Profile Page- Authenticated User](https://github.com/naragurgel/serenity_oils_aroma/issues/42)
+
+[Admin - Product Management](https://github.com/naragurgel/serenity_oils_aroma/issues/43)
+
+[Logout](https://github.com/naragurgel/serenity_oils_aroma/issues/44)
+
+[Blog page, Post Details and Favorite Post Page](https://github.com/naragurgel/serenity_oils_aroma/issues/45)
+
+[Contact Us Page](https://github.com/naragurgel/serenity_oils_aroma/issues/46)
+
+[Testimonials](https://github.com/naragurgel/serenity_oils_aroma/issues/47)
+
+[Nav bar non-authenticated and authenticated user](https://github.com/naragurgel/serenity_oils_aroma/issues/48)
 ## Accessibility Testing
-🚨**Required**
 
-You should have test cases for accessibility and links to them here. Start with a brief paragraph and then link to the
-test cases. If you are ambitious you can record the screen of you using the keyboard, convert it to a gif and upload it
-to the test case too.
+[Serenity Oils Homepage]()
 
-**example**
-> To ensure that the site was accessible to people with visual impairments, I used chrome's dev tools, lighthouse audits to ensure I had a score in the green for accessibility and that I could keyboard navigate through the page.
->
-> Here are links to the test cases for each which contains the screenshot for the lighthouse audit.
-> - [home page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/12)
-> - [experience page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/13)
-> - [skills page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/14)
-> - [recommendations page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/15)
->
-> To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
-> - [site tabbed navigation test](https://github.com/maliahavlicek/ci_mentor_insights/issues/10)
+[Registration Process]()
 
-You can totally combine the tabbed navigation in the accessibility test and have 2 expected criteria, it's all up to
-you!
+[Login]()
+
+[Serenity Oils Products Page- Products Details]()
+
+[Bag]()
+
+[Checkout Page]()
+
+[User Profile Page- Authenticated User]()
+
+[Admin - Product Management]()
+
+[Logout]()
+
+[Blog page, Post Details and Favorite Post Page]()
+
+[Contact Us Page]()
+
+[Testimonials]()
+
+[Nav bar non-authenticated and authenticated user]()
 
 ## Validation Testing
 🚨**Required**
@@ -620,11 +653,6 @@ It's ok to not resolve all the defects you found. If you know of something that 
 explain why you chose not to resolve it. Again, do this in gitHub and provide a link to the defects you are not closing
 and ensure they have a comment in them.
 
-# E-commerce Business Model
-🚨**Required**
-
-In this section discuss your business model, how you use  SEO to get users to your site and how you hope to generate more traffic and get sponsors to back link to your site. 
-
 ## Facebook Business Page
 
 ![Facebook](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3ac96776-2442-457e-915b-4df79c3311d9)
@@ -673,6 +701,31 @@ I've made a map for the website so that search engines like Google can easily fi
 I've set up our website so that Google only looks at the important pages by blocking certain pages like authentication and others from being included in search results. This helps Google show the right information to people searching for our website.
 
 - [robots.txt file](https://github.com/naragurgel/serenity_oils_aroma/blob/main/robots.txt)
+
+# Technologies Used
+
+| JavaScript               | JavaScript played a vital role in providing dynamic interactivity to the messages.                                                                                          |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Python                   | Python is a versatile programming language that was extensively utilized to write all the code in the application.                                                          |
+| Django                   | Django is a powerful Python web framework used for efficient development, handling database interactions, and implementing secure authentication in the project.            |
+| PostgreSQL               | PostgreSQL was utilized to store and manage the project's data efficiently.                                                                                                 |
+| Bootstrap                | Bootstrap was employed to ensure a responsive design, making the website adapt seamlessly to different screen sizes and devices.                                            |
+| Font Awesome             | Font Awesome was utilized to enhance the overall design of the website by providing a collection of icons that could be easily integrated.                                  |
+| GitHub                   | GitHub served as the primary development environment, facilitating code management and effective tracking of changes made to the project.                                   |
+| Heroku                   | Heroku was utilized as the deployment platform for the website, making it accessible to users over the internet.                                                            |
+| Google Developer Tools   | Google Developer Tools, specifically DevTools, played a crucial role in bug detection, testing the website's responsiveness, and resolving issues across different devices. |
+| Jigsaw                   | Jigsaw was utilized to validate CSS code, ensuring its compliance with the specified standards and best practices.                                                          |
+| CI's pep8                | CI's pep8 tool was used to validate all Python code, ensuring adherence to coding standards and maintaining consistency throughout the project.                             |
+| Coloors                  | Coloors was utilized as a tool to generate a colour palette for the website design.                                                                                          |
+| W3 HTML                  | W3 HTML to validate the HTML code, ensuring its correctness and compliance with web standards.                                                                              |
+| Jshint                   | Jshint was used to validate JavaScript code, ensuring its quality, identifying potential errors, and promoting best practices.                                              |
+| Cloudinary               | Cloudinary was utilized as a cloud-based storage service to store and manage all static files and images used in the project.                                               |
+| Mermaid                  | Mermaid was used to create diagrams, providing a visual representation of various aspects of the project's architecture and workflow.                                       |
+| Gitpod                   | Gitpod provided an online development environment.                                                                                                                          |
+| Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format, simplifying the process of generating well-formatted tables.                           |
+| AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, providing a quick visual assessment of its responsiveness and compatibility.         |
+| Balsamiq                 | Balsamiq served as a wireframing tool, enabling the creation of visual representations of the website layout and structure, aiding in the design process.                   |
+| Lighthouse               | Lighthouse, a web performance testing tool, was used to assess the accessibility and performance of the website.                                                            |
 
 # Deployment
 ## Prerequisits
@@ -934,7 +987,6 @@ To deploy your application on Heroku, follow the steps bellow:
 7. **Access Your Deployed Application:**
 - After a successful deployment, you can access your application by visiting the URL provided in your Heroku app's dashboard.
 - Click on the "Open App" button or open the URL in a web browser to see your application live. 
-
 
 # Credits
 🚨**Required**
