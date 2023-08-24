@@ -1,10 +1,19 @@
 ---
-name: User Story
-about: This is our default user story template
-title: USER STORY <TITLE>
-labels: User Story
+name: TEST Case
+about: Test case
+title: 'TEST Case: <title>'
+labels: TEST_CASE
 assignees: ''
 
 ---
 
-As a **role** I can **capability** so that **received benefit**
+# Starting url
+https://serenity-oils-3beb26e98281.herokuapp.com/
+
+# Steps to take
+1.
+2.
+3.
+#Expected Outcome
+
+- [ ] No console errors
