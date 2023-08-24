@@ -22,7 +22,7 @@ https://serenity-oils-3beb26e98281.herokuapp.com/
 3. Press Enter to navigate to the 
 4. Observe the loading time of the page. It should load within a reasonable time frame.
 
-##Expected Outcome
+## Expected Outcome
 - [ ] No console errors
 
 ## Conclusion
