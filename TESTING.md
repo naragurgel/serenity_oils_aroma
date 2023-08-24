@@ -45,31 +45,27 @@ The template used was:
 
 ## Accessibility Testing
 
-[Serenity Oils Homepage]()
+[Serenity Oils Homepage](https://github.com/naragurgel/serenity_oils_aroma/issues/49)
 
-[Registration Process]()
+[Products](https://github.com/naragurgel/serenity_oils_aroma/issues/50)
 
-[Login]()
+[Products Details](https://github.com/naragurgel/serenity_oils_aroma/issues/57)
 
-[Serenity Oils Products Page- Products Details]()
+[User Profile Page- Authenticated User](https://github.com/naragurgel/serenity_oils_aroma/issues/58)
 
-[Bag]()
+[Admin - Product Management](https://github.com/naragurgel/serenity_oils_aroma/issues/59)
 
-[Checkout Page]()
+[Blog page](https://github.com/naragurgel/serenity_oils_aroma/issues/51)
 
-[User Profile Page- Authenticated User]()
+[Post Details](https://github.com/naragurgel/serenity_oils_aroma/issues/52)
 
-[Admin - Product Management]()
+[Favorite Post Page](https://github.com/naragurgel/serenity_oils_aroma/issues/56)
 
-[Logout]()
+[Contact Us Page](https://github.com/naragurgel/serenity_oils_aroma/issues/53)
 
-[Blog page, Post Details and Favorite Post Page]()
+[Testimonials](https://github.com/naragurgel/serenity_oils_aroma/issues/54)
 
-[Contact Us Page]()
-
-[Testimonials]()
-
-[Nav bar non-authenticated and authenticated user]()
+[Add Testimonial](https://github.com/naragurgel/serenity_oils_aroma/issues/55)
 
 ## Validation Testing
 🚨**Required**
