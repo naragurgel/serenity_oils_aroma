@@ -335,8 +335,6 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - <strong> Update</strong> - Admins can respond to inquiries to provide assistance.
 - <strong> Delete</strong> - Admins can remove inquiries that have been addressed or are no longer needed.
 
-### CRUD Diagrams
-HERE
 # Features
 
 ## Implemented Features
@@ -450,23 +448,35 @@ There is messages notifications for each important action taken.
 
 - 404
 
-  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/7aa1d8c8-d3e2-410e-ace3-bc975ba6cd87)
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b231ffcb-c7ec-4729-b853-a63838ad96ad)
 
 -400
 
-    
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d110705d-8834-4ea8-ba42-54f7d06f4201)
 
 -403
 
-    
-
+ ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/0d53f3c2-58df-4354-8c9f-efae7babc512)
+   
 -500
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/c2dae24c-b062-4b89-974b-91f1149506fd)
 
 **Magic link - verification**
 
 A magic link is a secure and user-friendly authentication method used to verify a user's identity. Instead of requiring a traditional password, a magic link is sent to the user's registered email address. When the user clicks on the link, it grants them access to a specific resource or action, such as confirming an order. This method enhances security and it provides a convenient way for users to confirm their identity while maintaining a high level of protection against unauthorized access.
 
+- The order sumary expires 15 min after the user complete the order, so if if the user is not logged and try to access the order this page will appear:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d09cb738-90f0-4282-b945-8bb019ec4886)
+
+After enter with the email address provided when the order was placed the user should receive a email with a new token to access the order details again:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/530dd8ff-2b5b-4032-b82e-627500be7778)
+
+If the email address doesn't match with the on provided, the user will receive the follow error msg:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ae7d8901-5681-4b79-b6ef-838fe4853380)
 
 # Future Features
 
