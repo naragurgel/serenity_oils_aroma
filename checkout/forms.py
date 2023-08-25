@@ -51,6 +51,6 @@ class EmailForm(forms.ModelForm):
         email = self.cleaned_data.get("email")
 
         if email and email != self.instance.email:
-            raise forms.ValidationError('Emails do not match with order email.')
+            raise forms.ValidationError('Emails do not match with order email.')  # noqa
 
         return email

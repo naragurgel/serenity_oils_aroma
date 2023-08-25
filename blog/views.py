@@ -19,7 +19,7 @@ class PostList(generic.ListView):
 
 class PostDetail(View):
     """
-    A view to display a single blog post and check if the user has liked it 
+    A view to display a single blog post and check if the user has liked it
     """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -62,7 +62,7 @@ def favorite_list(request):
     A view to display a list of user's favorite blog posts
     """
     user = request.user
-    favorite_posts = user.favorite.all()  
+    favorite_posts = user.favorite.all()
     context = {'favorite_posts': favorite_posts}
     return render(request, 'blog/favourite_list.html', context)
 

@@ -1,5 +1,6 @@
 from django.shortcuts import (
-    render, redirect, reverse, get_object_or_404, HttpResponse, HttpResponseRedirect
+    render, redirect, reverse, get_object_or_404,
+    HttpResponse, HttpResponseRedirect
 )
 from django.http import Http404
 from django.core import signing
@@ -81,11 +82,11 @@ def checkout(request):
 
                 # Save the user's info
                 if 'save-info' in request.POST:
-                    user_profile_form = UserProfileForm({f'default_{k}': v for k,v in order.items()}, instance=profile)
+                    user_profile_form = UserProfileForm({f'default_{k}': v for k, v in order.items()}, instance=profile)  # noqa
                     if user_profile_form.is_valid():
                         user_profile_form.save()
             if request.user.is_authenticated:
-                return redirect(reverse('checkout_success', args=[order.order_number]))
+                return redirect(reverse('checkout_success', args=[order.order_number]))  # noqa
             return redirect(generate_tokenized_link(order, request))
         else:
             messages.error(request, 'There was an error with your form. \
@@ -146,7 +147,7 @@ def checkout_success(request, order_number):
     if not order.user_profile:
 
         # if token exists we check to see if the email is the same from order
-        try: 
+        try:
             # Max age of 15 minutes
             token = request.GET.get("token", '')
             data = signing.loads(token, max_age=900)
@@ -157,10 +158,10 @@ def checkout_success(request, order_number):
                 return HttpResponseRedirect(reverse('errors/403.html'))
         except (signing.BadSignature, signing.SignatureExpired) as error:
             form = EmailForm()
-            return render(request, 'checkout/email_form.html', {'form': form, 'order_number': order_number})
+            return render(request, 'checkout/email_form.html', {'form': form, 'order_number': order_number})  # noqa
     elif order.user_profile.user != request.user:
         return HttpResponseRedirect(reverse('errors/403.html'))
-    
+
     if not order.email_sent:
         email_to = order.email
         subject = render_to_string(
@@ -178,7 +179,6 @@ def checkout_success(request, order_number):
             email will be sent to {order.email}.')
         order.email_sent = True
         order.save()
-
 
     if 'bag' in request.session:
         del request.session['bag']
@@ -198,8 +198,7 @@ def checkout_confirm_email(request, order_number):
     form = EmailForm(request.POST, instance=order)
 
     if not form.is_valid():
-        return render(request, 'checkout/email_form.html', {'form': form, 'order_number': order_number})
-
+        return render(request, 'checkout/email_form.html', {'form': form, 'order_number': order_number})  # noqa
 
     subject = render_to_string(
         'checkout/magic_link/magic_link_email_subject.txt',

@@ -32,7 +32,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-        
+
         if 'category' in request.GET:
             category = request.GET['category']
             products = products.filter(category__name=category)
@@ -89,7 +89,7 @@ def add_product(request):
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
-                request, 'Failed to add product. Please ensure the form is valid.')
+                request, 'Failed to add product. Please ensure the form is valid.')  # noqa
     else:
         form = ProductForm()
 
@@ -117,7 +117,7 @@ def edit_product(request, product_id):
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
-                request, 'Failed to update product. Please ensure the form is valid.')
+                request, 'Failed to update product. Please ensure the form is valid.')  # noqa
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
