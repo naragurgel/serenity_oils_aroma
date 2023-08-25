@@ -96,7 +96,7 @@
                                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                                 </small>
                                             {% endif %}
-                                            <p><a href="{% url 'product_detail' product.id %}">Product Details</a></p>
+                                            <p><a id='details' href="{% url 'product_detail' product.id %}">Product Details</a></p>
                                             <a href="{% url 'add_to_bag' product.id %}" aria-label="Add {{ product.name }} to Bag" class="btn btn-black rounded-0 mt-2">Buy Now</a>
 
                                         </div>

@@ -181,6 +181,10 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+#details {
+    color: #000000f3;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
