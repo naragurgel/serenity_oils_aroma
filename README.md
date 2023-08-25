@@ -207,10 +207,13 @@ For the Serenity Oils website, I've chosen to use the Bootstrap framework. I pic
 
 ### Custom Javascript
 
-- The changes for JS are in these folders:
+The changes for JS are in these folders:
 
- - **[JS- CHECKOUT](checkout/static/checkout/js/stripe_elements.js)**
- - **[JS- PROFILES](profiles/static/profiles/js/countryfield.css)**
+- [STRIPE_ELEMENT.JS](https://github.com/naragurgel/serenity_oils_aroma/blob/main/checkout/static/checkout/js/stripe_elements.js)
+
+- [COUNTRYFIELD.JS](https://github.com/naragurgel/serenity_oils_aroma/blob/main/profiles/static/profiles/js/countryfield.js)
+
+- [QUANTITY_INPUT_SCRIPT](https://github.com/naragurgel/serenity_oils_aroma/blob/main/products/templates/products/includes/quantity_input_script.html)
 
 ## Wireframes
 
@@ -333,7 +336,7 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - <strong> Delete</strong> - Admins can remove inquiries that have been addressed or are no longer needed.
 
 ### CRUD Diagrams
-
+HERE
 # Features
 
 ## Implemented Features
@@ -581,6 +584,9 @@ I've set up our website so that Google only looks at the important pages by bloc
 | Balsamiq                 | Balsamiq served as a wireframing tool, enabling the creation of visual representations of the website layout and structure, aiding in the design process.                   |
 | Lighthouse               | Lighthouse, a web performance testing tool, was used to assess the accessibility and performance of the website.                                                            |
 
+# Testing
+
+Please refer to the [TESTING.md](https://github.com/naragurgel/serenity_oils_aroma/blob/main/TESTING.md) file for all testing performed.
 # Deployment
 ## Prerequisits
 

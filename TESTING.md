@@ -372,16 +372,6 @@ The following site were used to aid in validation testing:
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/aa718102-a4b0-4f83-9f41-a2e6c79863a9)
 
-## Automated Testing
-🚀 **merit & beyhond**
-
-**NOTE: If you want MERIT or Higher, you MUST have some automated testing**
-If you managed to write jasmine tests or some django tests, note those files out here and how to run them.
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write up about my automated testing and how I ran them, but a simple test I'd recommend is a views test that tests authentication and any views you limit to superusers or logged in users.
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py
-
 ## Defects
 🚨**Required**
 
