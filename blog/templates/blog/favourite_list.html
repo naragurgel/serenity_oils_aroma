@@ -31,7 +31,7 @@
                     <!-- DISPLAY THE TITLE AND AUTHOR OF THE BLOG POST -->
                     <h1 class="post-title text-black text-center">{{ post.title }}</h1>
                     <p class="post-subtitle text-center">By: {{ post.author }} | {{ post.created_on }}</p>
-                    <a href="{% url 'remove_favorite' post.slug %}">Remove from Favorites</a>
+                    <a id='postremove' href="{% url 'remove_favorite' post.slug %}">Remove from Favorites</a>
                 </div>
                 
             </div>

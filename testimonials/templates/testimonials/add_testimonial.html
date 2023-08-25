@@ -25,7 +25,7 @@
 
         <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3">
-                <form method="POST" action="{% url 'add_testimonial' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_testimonial' %}" class="form mb-2" enctype="multipart/form-data" aria-label="form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-center">

@@ -46,7 +46,7 @@
                     {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                            <a class='text-black' ="{% url 'edit_product' product.id %}">Edit</a> | 
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
@@ -60,7 +60,7 @@
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn btn-black rounded-0" 
-                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" aria-label="decrement-button">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
@@ -72,7 +72,7 @@
                                         id="id_qty_{{ product.id }}">
                                     <div class="input-group-append">
                                         <button class="increment-qty btn btn-black rounded-0"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}" aria-label="increment-button">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>

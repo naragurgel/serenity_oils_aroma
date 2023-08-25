@@ -113,6 +113,10 @@ a.signup-blog-link {
     text-decoration: none !important;
 }
 
+#postremove {
+    color: #000;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
