@@ -462,6 +462,10 @@ There is messages notifications for each important action taken.
 
 -500
 
+**Magic link - verification**
+
+A magic link is a secure and user-friendly authentication method used to verify a user's identity. Instead of requiring a traditional password, a magic link is sent to the user's registered email address. When the user clicks on the link, it grants them access to a specific resource or action, such as confirming an order. This method enhances security and it provides a convenient way for users to confirm their identity while maintaining a high level of protection against unauthorized access.
+
 
 
 # Future Features
