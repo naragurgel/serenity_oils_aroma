@@ -188,7 +188,6 @@ The reduced scope approach allows for a quicker and more focused website launch,
 > - icons
 > - tabbed content
 > - Forms
-> - magic link verification
 
 ### Frameworks
 
@@ -439,7 +438,7 @@ There is messages notifications for each important action taken.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/1136eaaa-5423-4148-af3e-858d7931efd3)
 
--Delete Testimonial
+- Delete Testimonial
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/5b97ba22-995f-415a-8db3-63248db543a4)
 
@@ -450,15 +449,15 @@ There is messages notifications for each important action taken.
 
   ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b231ffcb-c7ec-4729-b853-a63838ad96ad)
 
--400
+- 400
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d110705d-8834-4ea8-ba42-54f7d06f4201)
 
--403
+- 403
 
  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/0d53f3c2-58df-4354-8c9f-efae7babc512)
    
--500
+- 500
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/c2dae24c-b062-4b89-974b-91f1149506fd)
 
