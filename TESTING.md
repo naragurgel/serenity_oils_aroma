@@ -138,11 +138,17 @@ The following site were used to aid in validation testing:
 
 ### [STRIPE_ELEMENT.JS](https://github.com/naragurgel/serenity_oils_aroma/blob/main/checkout/static/checkout/js/stripe_elements.js)
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/aef55e90-40b0-483e-a403-8712195ae708)
+
 ### [COUNTRYFIELD.JS](https://github.com/naragurgel/serenity_oils_aroma/blob/main/profiles/static/profiles/js/countryfield.js)
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/dcd1a21d-dbf1-485d-9056-c2a587f3801c)
 
 ### [QUANTITY_INPUT_SCRIPT](https://github.com/naragurgel/serenity_oils_aroma/blob/main/products/templates/products/includes/quantity_input_script.html)
 
 The following site were used to aid in validation testing:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ba41841a-1555-4cc2-9442-39f0c365ef0e)
 
 - **[CI's pep8 tool](https://pep8ci.herokuapp.com/)** 
 
