@@ -103,33 +103,63 @@ The following site were used to aid in validation testing:
 
 ### HOME PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/acfa56ca-200a-4060-906b-93dd937f1dac)
+
 ### PRODUCTS PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/5ecf6ae1-9385-4b78-a10b-bb3568257081)
 
 ### PRODUCTS DETAILS PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/8954e6df-d708-4b22-ab08-4ebb224fcc2b)
+
 ### BLOG PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/0f1cf68c-15dd-4715-9a15-c40c67076cd6)
 
 ### BLOG DETAILS PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/cf61d6b7-b0c5-4cf3-8cbd-2c104abbb1ea)
+
 ### BLOG POSTS FAVORITES PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/01797d0f-ac85-46fd-aed4-a6be4b94913c)
 
 ### CONTACT US PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d5bddb25-21ba-4fdc-939a-65c89f06405c)
+
 ### TESTIMONIALS PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/c68e18d8-2fd9-4865-9ead-c046ff80d6c1)
 
 ### TESTIMONIALS DETAILS PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ca6a8f67-d783-4e77-83c8-f7bcb02f82c4)
+
 ### LOGOUT PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/1330334e-a447-4186-9e18-6787435a43c9)
 
 ### LOGIN PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3e3e8b0e-11c6-4170-be62-e3c10b65af63)
+
 ### REGISTER PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/85f8da7e-86e9-4a97-8e31-98cd911119e6)
 
 ### MY PROFILE PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/38f8a089-67ed-4cfa-bc95-b6ed31bde833)
+
 ### SHOPPING BAG PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/f14997b5-c165-45fa-8034-be1ac12759c8)
+
 ### CHECKOUT PAGE:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3a7910a1-2976-42ee-9d60-fbf098aa8f1c)
 
 ### CHECKOUT SUCCESS PAGE:
 
