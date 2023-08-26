@@ -9,7 +9,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-label="products">
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -18,10 +18,10 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="aromatherapy-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Aromatherapy
             </a>
-            <div class="dropdown-menu border-0" aria-label ="aromatherapy">
+            <div class="dropdown-menu border-0" aria-labelledby="aromatherapy-link">
                 <a href="{% url 'products' %}?category=essential_oils" class="dropdown-item">Oils</a>
                 <a href="{% url 'products' %}?category=diffuser" class="dropdown-item">Oil Diffuser</a>
                 <a href="{% url 'products' %}?category=candles" class="dropdown-item">All Candles</a>
@@ -36,7 +36,7 @@
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="more-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
             </a>
-            <div class="dropdown-menu border-0" aria-label="more">
+            <div class="dropdown-menu border-0" aria-labelledby="more-link">
                 <a href="{% url 'blog' %}" class="dropdown-item">Blog</a>
                 <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
                 <a href="{% url 'testimonials' %}" class="dropdown-item">Testimonials</a>
