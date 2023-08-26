@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 <!-- DISPLAY IMAGE FOR POSTS -->
-                                <img class="card-img-top" src="{{ post.featured_image.url}}">
+                                <img class="card-img-top" src="{{ post.featured_image.url}}" alt="Card image of the blog">
                             </div>
                              <!-- LINK TO THE EACH BLOG POST -->
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
