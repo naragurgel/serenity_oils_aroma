@@ -82,7 +82,17 @@ def checkout(request):
 
                 # Save the user's info
                 if 'save-info' in request.POST:
-                    user_profile_form = UserProfileForm({f'default_{k}': v for k, v in order.items()}, instance=profile)  # noqa
+                    profile_data = {
+                        'default_phone_number': order.phone_number,
+                        'default_country': order.country,
+                        'default_postcode': order.postcode,
+                        'default_town_or_city': order.town_or_city,
+                        'default_street_address1': order.street_address1,
+                        'default_street_address2': order.street_address2,
+                        'default_county': order.county,
+                    }
+                    user_profile_form = UserProfileForm(
+                        profile_data, instance=profile)
                     if user_profile_form.is_valid():
                         user_profile_form.save()
             if request.user.is_authenticated:
