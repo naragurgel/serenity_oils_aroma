@@ -26,7 +26,7 @@
         <div class="row g-0">
             <div class="col-12 masthead-image d-flex align-items-center justify-content-center">
                 <!-- DISPLAY FEATURED IMAGE OF BLOG POST -->
-                <img src="{{ post.featured_image.url }}" class="img-fluid" alt="{{ post.title }}">
+                <a href="{% url 'post_detail' post.slug %}"><img src="{{ post.featured_image.url }}" class="img-fluid" alt="{{ post.title }}"></a>
                 <div class="ml-3 masthead-content text-center">
                     <!-- DISPLAY THE TITLE AND AUTHOR OF THE BLOG POST -->
                     <h1 class="post-title text-black text-center">{{ post.title }}</h1>
