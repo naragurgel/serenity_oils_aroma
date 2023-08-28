@@ -419,9 +419,11 @@ The check out feature is simple and secure, so you can easy go through the proce
 
 **Profile**
 
-The Profile feature, gives a personalized space to oversee the user's account and monitor the order history. It is on the top of the page on "My Profile", the user can check and adjust the default delivery information. It's a handy way to keep your shipping details updated, so the user will be all set during the checkout phase. The user can find the 'Order History' section where they will have all past orders, neatly organized by order number. With just a simple click on that number, they can go back into the specifics of your earlier purchases. Whether it's for reordering or tracking.
+The Profile feature, gives a personalized space to oversee the user's account and monitor the order history. It is on the top of the page on "My Profile", the user can check and adjust the default delivery information. It's a handy way to keep your shipping details updated, so the user will be all set during the checkout phase.
+- The user can find the 'Order History' section where they will have all past orders, neatly organized by order number. With just a simple click on that number, they can go back into the specifics of your earlier purchases. Whether it's for reordering or tracking.
+- The user can add a testimonial for any order placed before by clicking in the button.
 
-![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/79d42d38-7ff4-4abe-a47d-d6d74df41549)
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/069e73b1-e783-4a33-9335-fe9aeba5643b)
 
 **Blog**
 
