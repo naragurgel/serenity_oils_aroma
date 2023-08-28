@@ -163,6 +163,7 @@ The following site were used to aid in validation testing:
 
 ### CHECKOUT SUCCESS PAGE:
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/89111f20-df53-4425-aa8c-60863b44303c)
 
 - **[JS validation](https://jshint.com)**
 
