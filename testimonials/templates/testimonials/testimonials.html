@@ -42,10 +42,8 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col-12 text-center small testimonials">
-                                        {% if testimonial in queryset_author %}
-                                        <a class="btn btn-outline-black rounded-0 mb-3" href="{% url 'edit_testimonial' testimonial.slug %}">Edit</a> | 
-                                        {% endif %}
                                         {% if testimonial in queryset_author or is_admin %}
+                                        <a class="btn btn-outline-black rounded-0 mb-3" href="{% url 'edit_testimonial' testimonial.slug %}">Edit</a> 
                                         <a class="btn btn-outline-black rounded-0 mb-3" href="{% url 'delete_testimonial' testimonial.slug %}">Delete</a>
                                         {% endif %}
                                     </div>

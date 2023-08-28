@@ -106,9 +106,9 @@ Those seeking sensory harmony and well-being, who value the therapeutic potentia
 
 ## Iterations and Progress Boards
 
-I'm the onwer of the project so I only did one interaction on the progress board.
+I'm the onwer of the project so I only did one iterations on the progress board.
 
-- [Interactions](https://github.com/users/naragurgel/projects/7)
+- [Iterations](https://github.com/users/naragurgel/projects/7)
 
 ![backlog1](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ff19fa4e-dbc5-4ddf-8508-c08fa61016ac)
 
@@ -151,6 +151,8 @@ I'm the onwer of the project so I only did one interaction on the progress board
 - <strong>Single Payment Option:</strong> Start with one payment method, such as credit/debit cards, and delay integrating other payment options.
 - <strong>Basic Design:</strong> Begin with a simple and clean website design, focusing on functionality rather than elaborate visual elements.
 - <strong>Limited Contact Options:</strong> Provide a simple contact form for user inquiries, without extensive customer support channels.
+- <strong>Add Favorites Blog Post's</strong>: Provide a option to save the favorites posts from the blog on a list.
+- <strong>Testimonials</strong>: Start with some testimonials about customer of the page.
 
 The reduced scope approach allows for a quicker and more focused website launch, providing room for gradual expansion and enhancement based on user feedback and business growth.
 
@@ -216,8 +218,6 @@ The changes for JS are in these folders:
 
 ## Wireframes
 
-HERE
-
 - <strong>Home Page</strong>
 
 - <strong>Products</strong>
@@ -244,7 +244,7 @@ HERE
 
 ## Entity Relationship Diagram
 
-Open it here: [output.pdf](https://github.com/naragurgel/serenity_oils_aroma/files/12420408/output.pdf)
+Open it here: [output.pdf](https://github.com/naragurgel/serenity_oils_aroma/blob/main/output.pdf)
 
 ## Database Choice
 For the Serenity Oils website, i've opted to utilize PostgreSQL as our database. This decision was made by the fact that our data exhibits a relational structure, and the use of PostgreSQL aligns with the hosting platform, Heroku. This choice not only facilitates smooth and cost-effective database management but also ensures the efficient handling of our website's data in a relational context.
@@ -280,7 +280,8 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - Subject (CharField): The subject of the user's inquiry.
 - Message (TextField): The message provided by the user.
 
-> ### Activities Model
+
+# Activities Model
 
 <strong>1- Blog Model:</strong>
 
@@ -300,8 +301,8 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 
 - <strong> Create</strong> - Administrators create blog posts to provide valuable content.
 - <strong> Read</strong> - Blog posts are accessible to users in the blog section of the website.
-- <strong> Update</strong> - Administrators can edit blog posts to make improvements.
-- <strong> Delete</strong> - Administrators can remove blog posts that are no longer relevant.
+- <strong> Update</strong> - Administrators can edit blog posts to make improvements.  (Django admin)
+- <strong> Delete</strong> - Administrators can remove blog posts that are no longer relevant.  (Django admin)
 
 <strong>2- Testimonials Model:</strong>
 
@@ -315,10 +316,10 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 | status     | IntegerField  | Indicates if the testimonial is a draft or published (0: Draft, 1: Published) | Default: 0 (draft)                                          |                 |
 | updated_on | DateTimeField | Date and time when the testimonial was last updated                           | Auto-generated on update                                    |                 |
 
-- <strong> Create</strong> - Users have the opportunity to express their thoughts and satisfaction by submitting testimonials.
-- <strong> Read</strong> - Administrators have the ability to review the testimonials that have been submitted. 
-- <strong> Update</strong> - Admins can make necessary updates to testimonials, including changing their status from draft to published. 
-- <strong> Delete</strong> - Admins can remove testimonials that are no longer relevant or suitable for display.
+- <strong> Create</strong> -  Authenticated Users have the opportunity to express their thoughts and satisfaction by submitting testimonials. (CUSTOM)
+- <strong> Read</strong> - All users have the ability to read the testimonials that have been submitted. (CUSTOM)
+- <strong> Update</strong> - Admins can make necessary updates to testimonials, including changing their status from draft to published. Non-admin users can update testimonials they created. (CUSTOM)
+- <strong> Delete</strong> -  Admins can remove testimonials that are no longer relevant or suitable for display. Non admin users can delete testimonials they created. (CUSTOM)
 
 <strong>3- Contact Us Model:</strong>
 
@@ -330,9 +331,9 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 | message | TextField  | Message content from the user           | Required                             |                 |
 
 - <strong> Create</strong> - Users initiate contact by submitting their inquiries and messages.
-- <strong> Read</strong> - Admins and support staff access and review user inquiries.
-- <strong> Update</strong> - Admins can respond to inquiries to provide assistance.
-- <strong> Delete</strong> - Admins can remove inquiries that have been addressed or are no longer needed.
+- <strong> Read</strong> - Admins and support staff access and review user inquiries. (Django admin)
+- <strong> Update</strong> - Admins can respond to inquiries to provide assistance.  (Django admin)
+- <strong> Delete</strong> - Admins can remove inquiries that have been addressed or are no longer needed.  (Django admin)
 
 # Features
 

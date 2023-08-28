@@ -110,7 +110,7 @@ def edit_testimonial(request, slug):
     """ Edit a testimonial """
 
     testimonial = get_object_or_404(Testimonials, slug=slug)
-    if not testimonial.author == request.user:
+    if not testimonial.author and not request.user.is_admin == request.user:
         messages.error(request,
                        'Sorry, only author can edit a testimonial.'
                        )

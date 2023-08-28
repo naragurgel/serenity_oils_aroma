@@ -33,7 +33,7 @@
         <hr class="w-75 mb-3">
         <div class="row">
           <div class="col-12 text-center small testimonials">
-            {% if testimonial in queryset_author %}
+            {% if testimonial in queryset_author or is_admin %}
             <a
               class="color-btn-edit-tes"
               href="{% url 'edit_testimonial' testimonial.slug %}"
