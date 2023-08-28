@@ -395,6 +395,12 @@ The Blog feature has informative articles, covering everything from wellness tip
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e1cd9ac9-f70e-4da6-866e-d0fbcb871431)
 
+*Details Post Blog*
+
+
+*Like Post Blog*
+
+
 *Favorites Post Blog*
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/abee07bd-c23f-4306-8aae-d6dd6b92b834)
@@ -410,6 +416,17 @@ The Contact Us page is the direct line with the admin. Whether the user wants to
 The Testimonials page discover what others have to say about their experience with Serenity Oils. Testimonials page is a collection of feedback from the valued customers. Read about how the products have made a positive impact on their well-being and lifestyle. These testimonials offer genuine insights into the benefits of our offerings and the satisfaction of the customers. 
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/56758542-4fef-4d4a-8269-2030f8178c8a)
+
+*Details Post Testimonial*
+
+*Create Post Testimonial*
+
+*Edit Post Testimonial*
+
+*Create Post Testimonial*
+
+*Delete Create Post Testimonial*
+
 
 **Footer**
 
