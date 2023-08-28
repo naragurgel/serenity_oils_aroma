@@ -355,6 +355,34 @@ The navigation feature on the Serenity Oils website is intuitive and user-friend
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/81faf5da-395b-44f0-9bd0-feb4ae9a35d3)
 
+- Login/ Logout and Register option on the nav:
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/379ed8b2-751b-491b-860f-9e2692d22cca)
+
+- Super user options:
+
+The super user is able to manage products, manage blog post, manage contact us query.
+  
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b23dd275-b898-438b-b719-e09858249a59)
+
+- Authenticated user:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/12a5d45b-dff1-47fb-a124-87cdbfdfc06b)
+
+** Filtering **
+
+- Products can be filtered by price, rating and category.
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/94ca0320-989d-4e08-93c6-53a49f210310)
+
+- On the 'Aromatherapy' dropdown, the products are filtered by category: 'Oils', 'Oils Diffusers' and 'Candles'.
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/0282692c-a746-4fc5-9022-ff384282a1cd)
+
+- On the 'More' dropdown, the user will find link for: 'Contact Us', 'Testimonials' and 'Blog'.
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/683ec1e1-a2f4-4a74-a64f-03629f68b859)
+
 **Sign in/ Sign up:**
 
 The Serenity Oils website provides an easy way for sign-in and sign-up procedure, placing convenience and accessibility at the forefront of the user experience. The sign-in page not only offers straightforward sign-in options but also features a convenient "Forgot Password" link, enabling users to easily reset their password without any undue complexities.
@@ -377,9 +405,17 @@ The Products Page is designed to make shopping easy. There is a "Quick Buy" butt
 The Bag & Checkout feature, designed to make the user's shopping experience effortless and efficient. When they're on the bag page, it's the hub for managing all chosen items. Every product is showcased with its image, name, price, and SKU, giving a clear picture of what was picked. And to give the ultimate control, there is a quantity button for adjusting amounts or removing items. It's all about ensuring that the order is exactly how the user want it.
 The check out feature is simple and secure, so you can easy go through the process. The user-friendly form collects all the essential details, like the shipping info and payment card data. Plus, there's an order summary right there, allowing the user to review all choices before finalize the purchase.
 
+- Bag
+  
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/a9876c1a-e19f-4c94-b845-fcc5267b816a)
 
+- Checkout
+  
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/9246dfb9-7c19-415b-b709-15994595c871)
+
+- Order Confirmation email
+  
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/01327444-83da-4604-8abf-593d7bd051c7)
 
 **Profile**
 
@@ -393,17 +429,29 @@ The Blog feature has informative articles, covering everything from wellness tip
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ddf1fe08-9a08-4134-9fc5-3782b04de1a3)
 
-![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e1cd9ac9-f70e-4da6-866e-d0fbcb871431)
-
 *Details Post Blog*
 
+- On this page the user will be able to read the full post.
+- if the user is authenticated, here they will find a button to add the post to the favorite's list.
+  
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e1cd9ac9-f70e-4da6-866e-d0fbcb871431)
 
 *Like Post Blog*
 
+- If the user  is authenticated, they can like the post.
+  
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/95b6583a-bf9a-4a6e-ae0e-df8e4fdf283b)
 
 *Favorites Post Blog*
 
+- Here is the list of favorites post from the blog.
+- If the user  is authenticated, they add the post to the favorite list, and remove it if they want.
+  
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/abee07bd-c23f-4306-8aae-d6dd6b92b834)
+
+- Here is the page when the user haven't added any post to the list
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/f937f227-fb86-487d-981d-6e1d289577f8)
 
 **Contact Us**
 
@@ -415,22 +463,38 @@ The Contact Us page is the direct line with the admin. Whether the user wants to
 
 The Testimonials page discover what others have to say about their experience with Serenity Oils. Testimonials page is a collection of feedback from the valued customers. Read about how the products have made a positive impact on their well-being and lifestyle. These testimonials offer genuine insights into the benefits of our offerings and the satisfaction of the customers. 
 
-![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/56758542-4fef-4d4a-8269-2030f8178c8a)
+- Not authenticated:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/1c390fba-f7bf-4786-971e-ef39ef25d92d)
+
+- If the user  is authenticated and wrote a testimonial, they'll see the 'EDIT/DELETE' buttons, same if they are superuser.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3b84c91f-d11b-4465-8d4d-afe4e2f7d928)
 
 *Details Post Testimonial*
 
+- By clickon on the testimonial, the page will load the full message.
+- If the user  is authenticated and wrote a testimonial, they'll see the 'EDIT/DELETE' buttons, same if they are superuser.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/6063a4f6-01a8-4668-a0ca-38529a24b581)
+
 *Create Post Testimonial*
+
+- If the user  is authenticated, they can add a testimonial regarding the order.
+- They will find anotheroptions to add a new testimonial on 'My Profile', 'My Order History', below the orders.
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/07c29554-0e41-4a2c-8df2-b62eb2757cf5)
 
 *Edit Post Testimonial*
 
-*Create Post Testimonial*
+- If the user  is authenticated, they can edit the testimonial, same for superuser.
 
-*Delete Create Post Testimonial*
+ ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/e30525bf-0242-4031-bbc2-b30b6cde9db9)
 
+**Footer and Newsletter**
 
-**Footer**
-
-The footer of the Serenity Oils website provides direct links to our social media platforms, ensuring the user can stay connected and updated. To enhance accessibility,it's included an "aria-label" attribute for improved user experience, making it easier to understand the purpose of different elements. If the user is interested in receiving the newsletter, signing up is simple – just enter the email address and stay informed about latest updates and offerings.
+The footer of the Serenity Oils website provides direct links to our social media platforms, ensuring the user can stay connected and updated. To enhance accessibility,it's included an "aria-label" attribute for improved user experience, making it easier to understand the purpose of different elements. 
+- If the user is interested in receiving the newsletter, signing up is simple – just enter the email address and stay informed about latest updates and offerings.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/ada0fb18-4468-44a9-801a-819e00913fbb)
 
@@ -509,37 +573,9 @@ If the email address doesn't match with the on provided, the user will receive t
 
 6- <strong>Customer Chat:</strong> Introducing a live chat support system to offer immediate assistance and address any questions users might have.
 
-# Testing
-## Cross Browser and Cross Device Testing
+7- <strong>CRUD for blog:</strong> Introducing the options to edit, delete and add on the blog's page to mach with the django admin.
 
-- I've tested the compatibility and visual appeal of the website on different platforms, the appearance and the website functions are working normally on all this devices:
-
-| Tool/Device    | Browser | OS            | Viewport       |
-|----------------|---------|---------------|----------------|
-| Iphone 14 Plus | Safari  | V16.0         | 1284 x 2778 px |
-| Iphone 13      | Safari  | V16.3         |  390 x 664 px  |
-| Iphone 12      | Safari  | V14.1         |  390 x 664 px  |
-| Moto G9 v10.0  | Firefox | Android,v10.0 |  390 x 664 px  |
-| OnePlus        | Chrome  | v9.0          |  412 x 757 px  |
-| Samsung Galaxy | Firefox | v12.0         |  384 x 702 px  |
-| Google Pixel   | Chrome  | v13.0         |  412 x 796 px  |
-| Ipad Pro       | Safari  | v16.2         | 1024 x 1292 px |
-| Windows PC     | Edge    | Windowns 11   | 1336 x 667 px  |
-| Mac PC         | Safari  | Safari 15.6   | 1336 x 667 px  |
-| Windows PC     | Chrome  | Chrome        | 1336 x 667 px  |
-
-> **Most Popular browser & Operating System:**
-
-| Browser         | Market Share (%) | Operating System | Market Share (%) |
-|-----------------|------------------|------------------|------------------|
-| Google Chrome   | 63.81            | Windows          | 70.89            |
-| Apple Safari    | 18.85            | macOS            | 18.83            |
-| Microsoft Edge  | 3.57             | iOS              | 10.82            |
-| Mozilla Firefox | 3.16             | Android          | 0.71             |
-| Samsung Internet| 2.71             | Linux            | 1.71             |
-| Other           | 7.90             | Other            | 1.04             |
-
-The selections in the table have been determined using statistics from (gs.statcounter.com)[https://gs.statcounter.com/], which reflects the distribution of web browser usage among users. Given that Chrome and Safari hold the largest market shares, they were prioritized for thorough testing across various devices and operating systems. Microsoft Edge, with a substantial user base, was also included for comprehensive assessment. Considering the relatively smaller market shares of Firefox, Samsung Internet, and Opera, they have been grouped together under the "Other" category. 
+8- <strong>CRUD for contact us:</strong> Workflow and enhancements to include dates created and dates resolved.
 
 ## Facebook Business Page
 
@@ -618,6 +654,7 @@ I've set up our website so that Google only looks at the important pages by bloc
 # Testing
 
 Please refer to the [TESTING.md](https://github.com/naragurgel/serenity_oils_aroma/blob/main/TESTING.md) file for all testing performed.
+
 # Deployment
 ## Prerequisits
 
