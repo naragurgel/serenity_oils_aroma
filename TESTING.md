@@ -4,6 +4,38 @@
 
 You can view the deployed website [here](https://serenity-oils-3beb26e98281.herokuapp.com/).
 
+# Testing
+## Cross Browser and Cross Device Testing
+
+- I've tested the compatibility and visual appeal of the website on different platforms, the appearance and the website functions are working normally on all this devices:
+
+| Tool/Device    | Browser | OS            | Viewport       |
+|----------------|---------|---------------|----------------|
+| Iphone 14 Plus | Safari  | V16.0         | 1284 x 2778 px |
+| Iphone 13      | Safari  | V16.3         |  390 x 664 px  |
+| Iphone 12      | Safari  | V14.1         |  390 x 664 px  |
+| Moto G9 v10.0  | Firefox | Android,v10.0 |  390 x 664 px  |
+| OnePlus        | Chrome  | v9.0          |  412 x 757 px  |
+| Samsung Galaxy | Firefox | v12.0         |  384 x 702 px  |
+| Google Pixel   | Chrome  | v13.0         |  412 x 796 px  |
+| Ipad Pro       | Safari  | v16.2         | 1024 x 1292 px |
+| Windows PC     | Edge    | Windowns 11   | 1336 x 667 px  |
+| Mac PC         | Safari  | Safari 15.6   | 1336 x 667 px  |
+| Windows PC     | Chrome  | Chrome        | 1336 x 667 px  |
+
+> **Most Popular browser & Operating System:**
+
+| Browser         | Market Share (%) | Operating System | Market Share (%) |
+|-----------------|------------------|------------------|------------------|
+| Google Chrome   | 63.81            | Windows          | 70.89            |
+| Apple Safari    | 18.85            | macOS            | 18.83            |
+| Microsoft Edge  | 3.57             | iOS              | 10.82            |
+| Mozilla Firefox | 3.16             | Android          | 0.71             |
+| Samsung Internet| 2.71             | Linux            | 1.71             |
+| Other           | 7.90             | Other            | 1.04             |
+
+The selections in the table have been determined using statistics from (gs.statcounter.com)[https://gs.statcounter.com/], which reflects the distribution of web browser usage among users. Given that Chrome and Safari hold the largest market shares, they were prioritized for thorough testing across various devices and operating systems. Microsoft Edge, with a substantial user base, was also included for comprehensive assessment. Considering the relatively smaller market shares of Firefox, Samsung Internet, and Opera, they have been grouped together under the "Other" category. 
+
 ## Manual Testing
 
 I've create manual testing and added to the test [backlog](https://github.com/users/naragurgel/projects/8).
@@ -426,7 +458,6 @@ is what my custom tempalte looks like in the UX
 ![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
 
 ## Defects of Note
-🚀 **merit & beyhond**
 
 Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and how you finally
 ended up resolving them. Just create a link to the issues/defect of note.
