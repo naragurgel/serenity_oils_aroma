@@ -220,6 +220,24 @@ The changes for JS are in these folders:
 
 - <strong>Home Page</strong>
 
+Desktop view unauthenticated user:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/4836eb35-b14f-41cf-8ac0-6c901e6f28ff)
+
+Desktop view uthenticated user:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b4f8f837-9a0d-4b90-8a06-c562ff8dad2b)
+
+Desktop view super user:
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/5365a6fd-e87f-402e-b415-9687e5c6390d)
+
+Mobile view:
+- The menu options are the same for the desktop view, they are displayed in a dropdown menu.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b57050f7-077a-495d-9bde-13ce0dba3f4e)
+
+
 - <strong>Products</strong>
 
 - <strong>Products Details</strong>
