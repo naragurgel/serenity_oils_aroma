@@ -479,6 +479,10 @@ The Contact Us page is the direct line with the admin. Whether the user wants to
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d291f859-bef8-4a6b-b333-8a6a189840b7)
 
+The success message appers after the user submit the query.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/3c1912cc-3e93-41fe-922f-5861a3524885)
+
 **Testimonials**
 
 The Testimonials page discover what others have to say about their experience with Serenity Oils. Testimonials page is a collection of feedback from the valued customers. Read about how the products have made a positive impact on their well-being and lifestyle. These testimonials offer genuine insights into the benefits of our offerings and the satisfaction of the customers. 
