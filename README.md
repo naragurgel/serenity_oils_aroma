@@ -410,6 +410,12 @@ For new users register with us, the sign-in page prominently directs them to the
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/d02c963e-4cc0-4158-a5d0-39a89a7f39d3)
 
+- Email for verification:
+- 
+  After the user insert the data and submite to create an account, they will receive a email to verify it:
+
+  ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/99583b4a-c6a5-46f3-97f6-4ad7c64b7531)
+
 **Products Page and Product Detail:**
 
 The Products Page is designed to make shopping easy. There is a "Quick Buy" buttons below each product on the list page. This means you can grab what you want without needing to go through a bunch of extra steps. Plus, the page ensure that the customer will have all the info needed to choose wisely. They'll find the product's name, price, rating, and category all laid out clearly. And for more details, it's just one click to the product's detail page for the full scoop.
