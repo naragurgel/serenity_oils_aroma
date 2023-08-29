@@ -4,6 +4,15 @@
 
 You can view the deployed website [here](https://serenity-oils-3beb26e98281.herokuapp.com/).
 
+# Table of contents
+
+- [Testing](#testing)
+  - [Cross Browser and Cross Device Testing](#cross-browser-and-cross-device-testing)
+  - [Manual Testing](#manual-testing)
+  - [Accessibility Testing](#accessibility-testing)
+  - [Validation Testing](#validation-testing)
+  - [Defects](#defects)
+    
 # Testing
 ## Cross Browser and Cross Device Testing
 
@@ -446,24 +455,9 @@ The following site were used to aid in validation testing:
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/aa718102-a4b0-4f83-9f41-a2e6c79863a9)
 
 ## Defects
-🚨**Required**
 
-At this point you really should be using GITHUB's Issues to track these as it helps you with the AGILE process
-requirement as it's really easy to copy/paste screenshots in and then write up how you closed them.
-
-[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.542xzc8ufx4x)
-I put together on how to do this.
-
-is what my custom tempalte looks like in the UX
-![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
-
-## Defects of Note
-
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and how you finally
-ended up resolving them. Just create a link to the issues/defect of note.
+I've made [miletones](https://github.com/naragurgel/serenity_oils_aroma/issues?q=is%3Aissue+is%3Aclosed) to group all the defects and make them easier to been found.
 
 ### Outstanding Defects
 
-It's ok to not resolve all the defects you found. If you know of something that isn't quite right, list it out and
-explain why you chose not to resolve it. Again, do this in gitHub and provide a link to the defects you are not closing
-and ensure they have a comment in them.
+There are no known functional or visual outstanding defects at this time.
