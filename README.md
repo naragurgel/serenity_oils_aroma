@@ -12,8 +12,39 @@ You can view the deployed website [here](https://serenity-oils-3beb26e98281.hero
 ## Author
 Nara Gurgel
 
-## Contents
-CREATE TABLE
+# Table of contents
+
+- [UX](#ux)
+  - [Target Audience](#target-audience)
+  - [Iterations and Progress Boards](#iterations-and-progress-boards)
+  - [Feasibility vs Importance](#feasibility-vs-importance)
+  - [Scope](#scope)
+  - [Design Choices](#design-choices)
+  - [Wireframes](#wireframes)
+- [Information Architecture](#information-architecture)
+  - [Entity Relationship Diagram](#entity-relationship-diagram)
+  - [Database Choice](#database-choice)
+  - [Data Models](#data-models)
+- [Activities Model](#activities-model)
+- [Features](#features)
+  - [Implemented Features](#implemented-features)
+  - [- Email for verification:](#--email-for-verification)
+- [Future Features](#future-features)
+  - [Facebook Business Page](#facebook-business-page)
+  - [Newsletter Signup](#newsletter-signup)
+  - [SEO Strategy](#seo-strategy)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Prerequisits](#prerequisits)
+  - [Fork and Clone the Repository](#fork-and-clone-the-repository)
+  - [Making a Local Clone](#making-a-local-clone)
+  - [Development Deployment](#development-deployment)
+  - [Production Deployment](#production-deployment)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+  - [Acknowledgments](#acknowledgments)
 
 # UX
 Sereny Oils is a dedicated platform that provide a serene experience for aroma enthusiasts and those seeking tranquility in their daily lives. The central objective of the page is to present a diverse collection of essential oils and aromatherapy products that cater to various well-being goals, including relaxation, stress relief, and mood enhancement. Beyond the products, the page is committed to offering insights into the aromatherapy, collaborating with aromatherapy experts, and delivering insightful blog content to guide users on their aromatic journey towards inner calmness and balance.
@@ -236,27 +267,6 @@ Mobile view:
 - The menu options are the same for the desktop view, they are displayed in a dropdown menu.
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/b57050f7-077a-495d-9bde-13ce0dba3f4e)
-
-
-- <strong>Products</strong>
-
-- <strong>Products Details</strong>
-
-- <strong>Special Offers(New Arrivels)</strong>
-
-- <strong>Blog</strong>
-
-- <strong>Blog post details</strong>
-
-- <strong>My Favorites Post List</strong>
-
-- <strong>Testimonials</strong>
-
-- <strong>Add Testimonial or Edit Testimonial</strong>
-
-- <strong>Contact Us</strong>
-
-- <strong>Profile</strong>
 
 # Information Architecture
 
