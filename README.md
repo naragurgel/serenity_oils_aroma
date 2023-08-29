@@ -957,23 +957,28 @@ To deploy your application on Heroku, follow the steps bellow:
 - Click on the "Open App" button or open the URL in a web browser to see your application live. 
 
 # Credits
-🚨**Required**
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did.
+This workout prescription project was created with help, support, and resources from the following:
 
--[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
-    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+- **[Stack Overflow](https://stackoverflow.com/)**: A valuable resource for finding solutions to coding challenges and getting insights from the developer community.
+- **[Pexels](https://www.pexels.com/)**: A platform that provided high-quality royalty-free images used in the project.
+- **[Font Awesome](https://fontawesome.com/)**: for the variety of icons available.
+- **[Bootstrap](https://getbootstrap.com/)**: For the responsive design and also great style.
+- **[MDN Web Docs](https://developer.mozilla.org/en-US/)**: Another page for resource for finding solutions to coding challenges and getting insights from the developer community.
+- **[Code Institute](https://learn.codeinstitute.net/)**: Platform that offered informative content, tutorials, and projects that helped in developing and structuring this website.
+- **[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)**
+- **Modules and Libraries**: Various modules and libraries were utilized throughout the development process, including Django, Mermaid, and more. These modules and libraries greatly contributed to the functionality and aesthetics of the website.
 
-## Content
-
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+A special thanks to the Code Institute mentor Malia and the tutors for their guidance and support during the project's development.
 
 ## Media
 
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+**[Pexels](https://www.pexels.com/)** - The images were taken from Pexels.
+**[Font Awesome](https://fontawesome.com/)** - The icons was taken from Font Awesome.
 
 ## Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
-
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+- Code Institute walkthrough projects: 'Boutiq Ado' and 'I think Therefore I blog', which was where I had the initial ideas of how to start my project.
+- Mentor: Malia - Since the first project, always supporting me in the best way, helping with doubts and showing the best ways to develop the project
+- Team of tutors that helped me with the bug that was not deploying to my site on Heroku, they were super helpful and dedicated until we managed to find a solution.
+- My friend Gustavo Chahm, who is already a senior software developer, he answered many doubts that I had, he showed me the best ways to develop the site, always explaining everything with clarity and patience
