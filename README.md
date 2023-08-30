@@ -25,7 +25,6 @@ Nara Gurgel
   - [Entity Relationship Diagram](#entity-relationship-diagram)
   - [Database Choice](#database-choice)
   - [Data Models](#data-models)
-- [Activities Model](#activities-model)
 - [Features](#features)
   - [Implemented Features](#implemented-features)
   - [- Email for verification:](#--email-for-verification)
@@ -308,9 +307,6 @@ In the Serenity Oils website, I've structured the data model using Django's mode
 - Subject (CharField): The subject of the user's inquiry.
 - Message (TextField): The message provided by the user.
 
-
-# Activities Model
-
 <strong>1- Blog Model:</strong>
 
 | DB Key         | Data Type             | Purpose                                                                       | Form Validation                      | DB Processing   |
@@ -397,7 +393,7 @@ The super user is able to manage products, manage blog post, manage contact us q
 
 ![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/12a5d45b-dff1-47fb-a124-87cdbfdfc06b)
 
-** Filtering **
+**Filtering**
 
 - Products can be filtered by price, rating and category.
 
