@@ -84,8 +84,8 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            <a href="/admin/contact_us/contactus" class="dropdown-item">Manage Contact Inquires</a>
-                            <a href="/admin/blog/post" class="dropdown-item">Manage Blogs Posts</a>
+                            <a href="/admin/contact_us/contactus" class="dropdown-item" target="_blank" rel="noopener noreferrer nofollow">Manage Contact Inquires</a>
+                            <a href="/admin/blog/post" class="dropdown-item" target="_blank" rel="noopener noreferrer nofollow">Manage Blogs Posts</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'favorite_list' %}" class="dropdown-item">My Favorites Posts</a>
