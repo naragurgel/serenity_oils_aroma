@@ -84,6 +84,26 @@ The template used was:
 
 [Nav bar non-authenticated and authenticated user](https://github.com/naragurgel/serenity_oils_aroma/issues/48)
 
+## Defensive programming testing
+
+Defensive programming practices have been integrated into every page of the application, for all areas that store sensitive user information. In cases where unauthorized attempts are made to breach secure pathways housing personal data, a precautionary response is initiated. This results in the presentation of a cautionary page, illustrating the potential risks involved.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/6b02e7e8-e2fe-47a5-bd1c-af9b18d83e18)
+
+Flows with this protection that only the owner or the admin can have access:
+- Order history
+- Profile- Add  and update 
+- Add testimonial
+- Update testimonial
+- Delete testimonial
+- Add to Favorites posts list
+- Like a post on the blog's page
+- Add post on the blog- only admin
+
+Other defensive stuff:
+- A protective layer has been integrated through the utilization of Stripe's mechanisms for text fields. This strategic measure safeguards against the insertion of malicious scripts, thus enhancing the overall security of the system.
+- Magic link for access the order sumary if the user doesn't have an account.
+  
 ## Accessibility Testing
 
 [Serenity Oils Homepage](https://github.com/naragurgel/serenity_oils_aroma/issues/49)
@@ -461,3 +481,7 @@ I've made [miletones](https://github.com/naragurgel/serenity_oils_aroma/issues?q
 ### Outstanding Defects
 
 There are no known functional or visual outstanding defects at this time.
+
+[Back to the TOP](https://github.com/naragurgel/serenity_oils_aroma/edit/main/TESTING.md#testing)
+
+[Back to README.md](https://github.com/naragurgel/serenity_oils_aroma/tree/main#readme)https://github.com/naragurgel/serenity_oils_aroma/tree/main#readme)
