@@ -694,7 +694,7 @@ Please refer to the [TESTING.md](https://github.com/naragurgel/serenity_oils_aro
 # Deployment
 ## Prerequisits
 
-To run this project, you need a ElephantSQL & AWS Amazon account:
+To run this project, you need a ElephantSQL, AWS Amazon, Stripe and Gmail account:
 
 **ElephantSQL Set Up Account:**
 1. Start by visiting the ElephantSQL website at https://www.elephantsql.com/.
@@ -716,6 +716,12 @@ To run this project, you need a ElephantSQL & AWS Amazon account:
 2. How you set environmental variables depends on your operating system and development environment.
 3. Typically, you'll add a line like DATABASE_URL=<YOUR_DATABASE_URL> to your 'env.py' file or the environment configuration.
 4. Replace "<YOUR_DATABASE_URL>" with the actual URL you got from ElephantSQL.
+
+<hr>
+
+**Stripe**
+- Create a [Stripe](https://stripe.com/en-ie) account, access the dashboard, and generate your secret keys using an environment for developers
+- STRIPE Support - refer to this page in case of any problems with setting the account
 
 <hr>
 
@@ -863,6 +869,8 @@ To make a copy or ‘fork’ the repository:
 2. Navigate to [my repository](https://github.com/naragurgel/serenity_oils_aroma).
 3. At the upper-right corner of the page, locate the 'fork' option and click it to generate a duplicate of the original repository for your use.
 
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/67b1a0b6-b9fb-43db-a736-a7515f901b50)
+
 ## Making a Local Clone
 1. Below the repository name, access the 'code' tab.
 2. Within the clone box, find the HTTPS tab, and click on the clipboard icon to copy the URL.
@@ -870,6 +878,8 @@ To make a copy or ‘fork’ the repository:
 4. Navigate to the desired location for the cloned directory using GitBash.
 5. Input 'git clone' followed by pasting the previously copied GitHub URL.
 6. Press the enter key to initiate the process, resulting in the creation of the local clone.
+
+![image](https://github.com/naragurgel/serenity_oils_aroma/assets/112726044/717bd0fe-d2c9-4534-8375-2209837edb02)
 
 ## Development Deployment 
 
@@ -938,6 +948,19 @@ To deploy your application on Heroku, follow the steps bellow:
   - USE_AWS,
   - COLLECT_STATIC
 - Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables.
+
+| Key                   | Value          |
+|-----------------------|----------------|
+| AWS_ACCESS_KEY_ID     | < your value > |
+| AWS_SECRET_ACCESS_KEY | < your value > |
+| DATABASE_URL          | < your value > |
+| EMAIL_HOST_PASSWORD   | < your value > |
+| EMAIL_HOST_USER       | < your value > |
+| SECRET_KEY            | < your value > |
+| STRIPE_PUBLIC_KEY     | < your value > |
+| STRIPE_SECRET_KEY     | < your value > |
+| STRIPE_WH_SECRET      | < your value > |
+| USE_AWS               | True           |
 
 5. **Deploy the Application:**
 - In the "Deploy" tab, scroll down to the "Manual Deploy" section.
