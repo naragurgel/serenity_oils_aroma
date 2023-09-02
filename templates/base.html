@@ -32,6 +32,14 @@
     
     {% endblock %}
 
+    <!-- FAVICON -->
+    {% block favicon %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'css/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'css/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'css/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+    {% endblock %}
+    
      {% block corejs %}
         <script src="https://kit.fontawesome.com/734e8f7afc.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
