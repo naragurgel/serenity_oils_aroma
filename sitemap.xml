@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/bag/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/?category=essential_oils</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/?category=diffuser</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/?category=candles</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/contact_us/contact_us/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/5/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/4/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/3/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/1/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/7/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/6/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/10/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/12/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/11/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/13/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/8/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/products/9/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/aromatherapy-for-focus-and-mental-clarity-enhancing-productivity/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/aromatherapy-for-stress-anxiety-and-depression-finding-calm-and-balance/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/aromatherapy-exercises-for-relaxation-and-balance/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/starting-your-day-with-aromatherapy-energize-and-elevate/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/using-lavender-essential-oil-for-relaxation-and-more/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/blog/10-benefits-of-aromatherapy/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/lovely-scent/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/my-secret-weapon-for-stress-relief/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/quality/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/tea-tree/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/meditation-and-relaxation/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/authentic-aroma/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/testimonials/high-quality/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=/blog/save_favorite/aromatherapy-for-focus-and-mental-clarity-enhancing-productivity/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=/blog/save_favorite/aromatherapy-for-stress-anxiety-and-depression-finding-calm-and-balance/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=/blog/save_favorite/aromatherapy-exercises-for-relaxation-and-balance/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=/blog/save_favorite/starting-your-day-with-aromatherapy-energize-and-elevate/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=/blog/save_favorite/using-lavender-essential-oil-for-relaxation-and-more/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=/blog/save_favorite/10-benefits-of-aromatherapy/</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/?next=%2Fblog%2Fsave_favorite%2Faromatherapy-for-focus-and-mental-clarity-enhancing-productivity%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/?next=%2Fblog%2Fsave_favorite%2Faromatherapy-for-stress-anxiety-and-depression-finding-calm-and-balance%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/?next=%2Fblog%2Fsave_favorite%2Faromatherapy-exercises-for-relaxation-and-balance%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/?next=%2Fblog%2Fsave_favorite%2Fstarting-your-day-with-aromatherapy-energize-and-elevate%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/?next=%2Fblog%2Fsave_favorite%2Fusing-lavender-essential-oil-for-relaxation-and-more%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/signup/?next=%2Fblog%2Fsave_favorite%2F10-benefits-of-aromatherapy%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=%2Fblog%2Fsave_favorite%2Faromatherapy-for-focus-and-mental-clarity-enhancing-productivity%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=%2Fblog%2Fsave_favorite%2Faromatherapy-for-stress-anxiety-and-depression-finding-calm-and-balance%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=%2Fblog%2Fsave_favorite%2Faromatherapy-exercises-for-relaxation-and-balance%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=%2Fblog%2Fsave_favorite%2Fstarting-your-day-with-aromatherapy-energize-and-elevate%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=%2Fblog%2Fsave_favorite%2Fusing-lavender-essential-oil-for-relaxation-and-more%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://serenity-oils-3beb26e98281.herokuapp.com/accounts/login/?next=%2Fblog%2Fsave_favorite%2F10-benefits-of-aromatherapy%2F</loc>
+  <lastmod>2023-10-13T09:32:23+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
